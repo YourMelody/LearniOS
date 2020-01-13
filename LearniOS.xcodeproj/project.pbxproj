@@ -19,6 +19,16 @@
 		9A32B23923C7021000F6CEAA /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B23723C7021000F6CEAA /* GCDViewController.m */; };
 		9A32B23A23C7021000F6CEAA /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A32B23823C7021000F6CEAA /* GCDViewController.xib */; };
 		9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46BB23C9998C00224A8A /* MyOperation.m */; };
+		9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */; };
+		9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */; };
+		9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C523CC0E1700224A8A /* TransformView.m */; };
+		9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C623CC0E1700224A8A /* TransformView.xib */; };
+		9AAB46CA23CC123900224A8A /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C923CC123900224A8A /* icon_logo.png */; };
+		9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46CC23CC39FB00224A8A /* GestureVC.m */; };
+		9AAB46CF23CC39FB00224A8A /* GestureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46CD23CC39FB00224A8A /* GestureVC.xib */; };
+		9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D123CC654500224A8A /* HitTestVC.m */; };
+		9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46D223CC654500224A8A /* HitTestVC.xib */; };
+		9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D623CC66D800224A8A /* ShadowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +53,21 @@
 		9A32B23823C7021000F6CEAA /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
 		9AAB46BA23C9998B00224A8A /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
 		9AAB46BB23C9998C00224A8A /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
+		9AAB46BF23CC08F800224A8A /* TransAndGestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransAndGestTableVC.h; sourceTree = "<group>"; };
+		9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransAndGestTableVC.m; sourceTree = "<group>"; };
+		9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransAndGestTableVC.xib; sourceTree = "<group>"; };
+		9AAB46C423CC0E1700224A8A /* TransformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformView.h; sourceTree = "<group>"; };
+		9AAB46C523CC0E1700224A8A /* TransformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformView.m; sourceTree = "<group>"; };
+		9AAB46C623CC0E1700224A8A /* TransformView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformView.xib; sourceTree = "<group>"; };
+		9AAB46C923CC123900224A8A /* icon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logo.png; sourceTree = "<group>"; };
+		9AAB46CB23CC39FB00224A8A /* GestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
+		9AAB46CC23CC39FB00224A8A /* GestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
+		9AAB46CD23CC39FB00224A8A /* GestureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureVC.xib; sourceTree = "<group>"; };
+		9AAB46D023CC654500224A8A /* HitTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestVC.h; sourceTree = "<group>"; };
+		9AAB46D123CC654500224A8A /* HitTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestVC.m; sourceTree = "<group>"; };
+		9AAB46D223CC654500224A8A /* HitTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitTestVC.xib; sourceTree = "<group>"; };
+		9AAB46D523CC66D800224A8A /* ShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
+		9AAB46D623CC66D800224A8A /* ShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +132,7 @@
 		9A32B23523C701C800F6CEAA /* AllVCGroup */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB46BE23CC06AB00224A8A /* Transorm和手势等 */,
 				9AAB46BD23C9D5B700224A8A /* GCD相关 */,
 				9A1F493623C880D600FA6CC8 /* NSOperation相关 */,
 			);
@@ -121,6 +147,28 @@
 				9A32B23823C7021000F6CEAA /* GCDViewController.xib */,
 			);
 			path = "GCD相关";
+			sourceTree = "<group>";
+		};
+		9AAB46BE23CC06AB00224A8A /* Transorm和手势等 */ = {
+			isa = PBXGroup;
+			children = (
+				9AAB46C923CC123900224A8A /* icon_logo.png */,
+				9AAB46BF23CC08F800224A8A /* TransAndGestTableVC.h */,
+				9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */,
+				9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */,
+				9AAB46C423CC0E1700224A8A /* TransformView.h */,
+				9AAB46C523CC0E1700224A8A /* TransformView.m */,
+				9AAB46C623CC0E1700224A8A /* TransformView.xib */,
+				9AAB46CB23CC39FB00224A8A /* GestureVC.h */,
+				9AAB46CC23CC39FB00224A8A /* GestureVC.m */,
+				9AAB46CD23CC39FB00224A8A /* GestureVC.xib */,
+				9AAB46D023CC654500224A8A /* HitTestVC.h */,
+				9AAB46D123CC654500224A8A /* HitTestVC.m */,
+				9AAB46D223CC654500224A8A /* HitTestVC.xib */,
+				9AAB46D523CC66D800224A8A /* ShadowView.h */,
+				9AAB46D623CC66D800224A8A /* ShadowView.m */,
+			);
+			path = "Transorm和手势等";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,11 +228,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */,
 				9A32B22C23C6F49D00F6CEAA /* LaunchScreen.storyboard in Resources */,
+				9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */,
 				9A32B22923C6F49D00F6CEAA /* Assets.xcassets in Resources */,
 				9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */,
 				9A32B22723C6F49A00F6CEAA /* Main.storyboard in Resources */,
 				9A32B23A23C7021000F6CEAA /* GCDViewController.xib in Resources */,
+				9AAB46CF23CC39FB00224A8A /* GestureVC.xib in Resources */,
+				9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */,
+				9AAB46CA23CC123900224A8A /* icon_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,13 +248,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */,
 				9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */,
+				9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */,
 				9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */,
 				9A32B22F23C6F49D00F6CEAA /* main.m in Sources */,
+				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				9A32B23923C7021000F6CEAA /* GCDViewController.m in Sources */,
 				9A32B22123C6F49A00F6CEAA /* SceneDelegate.m in Sources */,
+				9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */,
+				9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
