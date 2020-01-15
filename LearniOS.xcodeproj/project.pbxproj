@@ -29,6 +29,12 @@
 		9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D123CC654500224A8A /* HitTestVC.m */; };
 		9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46D223CC654500224A8A /* HitTestVC.xib */; };
 		9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D623CC66D800224A8A /* ShadowView.m */; };
+		9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D923CD4E3000224A8A /* ChildButton.m */; };
+		9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46E223CD961200224A8A /* QuartzTableVC.m */; };
+		9AAB46E523CD961200224A8A /* QuartzTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46E323CD961200224A8A /* QuartzTableVC.xib */; };
+		9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46E723CDA01D00224A8A /* DrawViewController.m */; };
+		9AAB46EA23CDA01D00224A8A /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46E823CDA01D00224A8A /* DrawViewController.xib */; };
+		9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46EC23CDA06400224A8A /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,16 @@
 		9AAB46D223CC654500224A8A /* HitTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitTestVC.xib; sourceTree = "<group>"; };
 		9AAB46D523CC66D800224A8A /* ShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
 		9AAB46D623CC66D800224A8A /* ShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
+		9AAB46D823CD4E3000224A8A /* ChildButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildButton.h; sourceTree = "<group>"; };
+		9AAB46D923CD4E3000224A8A /* ChildButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildButton.m; sourceTree = "<group>"; };
+		9AAB46E123CD961200224A8A /* QuartzTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzTableVC.h; sourceTree = "<group>"; };
+		9AAB46E223CD961200224A8A /* QuartzTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzTableVC.m; sourceTree = "<group>"; };
+		9AAB46E323CD961200224A8A /* QuartzTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuartzTableVC.xib; sourceTree = "<group>"; };
+		9AAB46E623CDA01D00224A8A /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		9AAB46E723CDA01D00224A8A /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		9AAB46E823CDA01D00224A8A /* DrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
+		9AAB46EB23CDA06400224A8A /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		9AAB46EC23CDA06400224A8A /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +148,7 @@
 		9A32B23523C701C800F6CEAA /* AllVCGroup */ = {
 			isa = PBXGroup;
 			children = (
+				9AAB46E023CD949700224A8A /* Quartz2D */,
 				9AAB46BE23CC06AB00224A8A /* Transorm和手势等 */,
 				9AAB46BD23C9D5B700224A8A /* GCD相关 */,
 				9A1F493623C880D600FA6CC8 /* NSOperation相关 */,
@@ -167,8 +184,25 @@
 				9AAB46D223CC654500224A8A /* HitTestVC.xib */,
 				9AAB46D523CC66D800224A8A /* ShadowView.h */,
 				9AAB46D623CC66D800224A8A /* ShadowView.m */,
+				9AAB46D823CD4E3000224A8A /* ChildButton.h */,
+				9AAB46D923CD4E3000224A8A /* ChildButton.m */,
 			);
 			path = "Transorm和手势等";
+			sourceTree = "<group>";
+		};
+		9AAB46E023CD949700224A8A /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				9AAB46E123CD961200224A8A /* QuartzTableVC.h */,
+				9AAB46E223CD961200224A8A /* QuartzTableVC.m */,
+				9AAB46E323CD961200224A8A /* QuartzTableVC.xib */,
+				9AAB46E623CDA01D00224A8A /* DrawViewController.h */,
+				9AAB46E723CDA01D00224A8A /* DrawViewController.m */,
+				9AAB46E823CDA01D00224A8A /* DrawViewController.xib */,
+				9AAB46EB23CDA06400224A8A /* DrawView.h */,
+				9AAB46EC23CDA06400224A8A /* DrawView.m */,
+			);
+			path = Quartz2D;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAB46EA23CDA01D00224A8A /* DrawViewController.xib in Resources */,
 				9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */,
 				9A32B22C23C6F49D00F6CEAA /* LaunchScreen.storyboard in Resources */,
 				9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */,
@@ -236,6 +271,7 @@
 				9A32B22723C6F49A00F6CEAA /* Main.storyboard in Resources */,
 				9A32B23A23C7021000F6CEAA /* GCDViewController.xib in Resources */,
 				9AAB46CF23CC39FB00224A8A /* GestureVC.xib in Resources */,
+				9AAB46E523CD961200224A8A /* QuartzTableVC.xib in Resources */,
 				9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */,
 				9AAB46CA23CC123900224A8A /* icon_logo.png in Resources */,
 			);
@@ -248,17 +284,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
 				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */,
 				9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */,
 				9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */,
 				9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */,
+				9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */,
 				9A32B22F23C6F49D00F6CEAA /* main.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
+				9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				9A32B23923C7021000F6CEAA /* GCDViewController.m in Sources */,
 				9A32B22123C6F49A00F6CEAA /* SceneDelegate.m in Sources */,
 				9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */,
+				9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */,
 				9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

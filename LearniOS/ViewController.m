@@ -10,6 +10,7 @@
 #import "GCDViewController.h"
 #import "NSOperationTableVC.h"
 #import "TransAndGestTableVC.h"
+#import "QuartzTableVC.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,8 @@
     self.dataSource = @[
         @"1、GCD相关",
         @"2、NSOperation相关",
-        @"3、transform、touch和手势相关"
+        @"3、transform、touch和手势相关",
+        @"4、Quartz2D相关"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -49,6 +51,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 2) {
         TransAndGestTableVC *vc = [[TransAndGestTableVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 3) {
+        QuartzTableVC *vc = [[QuartzTableVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -31,6 +31,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shadowBtnAction:" destination="-1" eventType="touchUpInside" id="QPo-fT-Jcx"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EB2-Uz-075" customClass="ShadowView">
                     <rect key="frame" x="80" y="64" width="254" height="150"/>
@@ -42,11 +45,24 @@
                         <outlet property="backBtn" destination="VGu-dx-Umz" id="daP-K9-IJa"/>
                     </connections>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Km-zr-6pa" customClass="ChildButton">
+                    <rect key="frame" x="40" y="533" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cZT-A9-Lkl"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="moveBtnAction:" destination="-1" eventType="touchUpInside" id="pRq-yI-neE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="1Km-zr-6pa" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="156-vu-UmF"/>
                 <constraint firstItem="VGu-dx-Umz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="6Sy-cW-0ys"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EB2-Uz-075" secondAttribute="trailing" constant="80" id="84e-mg-7y3"/>
+                <constraint firstItem="1Km-zr-6pa" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="AzV-J3-EVN"/>
+                <constraint firstItem="1Km-zr-6pa" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="100" id="Hp7-QH-Xde"/>
                 <constraint firstItem="EB2-Uz-075" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="80" id="Xpj-Q9-RXm"/>
                 <constraint firstItem="VGu-dx-Umz" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="gZS-RX-wKj"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VGu-dx-Umz" secondAttribute="trailing" constant="40" id="hU4-y5-2tR"/>
