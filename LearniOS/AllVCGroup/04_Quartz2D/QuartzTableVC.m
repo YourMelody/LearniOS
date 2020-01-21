@@ -26,10 +26,15 @@
         @"6、画饼状图",
         @"7、画文字",
         @"8、画图片",
-        @"9、下雪",
+        @"9、下雪(CADisplayLink简单实用)",
         @"10、上下文栈相关",
         @"11、上下文的矩阵操作",
-        @"12、图片添加水印"
+        @"12、图片添加水印",
+        @"13、图片简单裁剪",
+        @"14、截屏",
+        @"15、截图",
+        @"16、擦除图片",
+        @"17、手势解锁"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -77,6 +82,18 @@
         vc.drawType = DrawType_Table;
     } else if (indexPath.row == 10) {
         vc.drawType = DrawType_Translate;
+    } else if (indexPath.row == 11) {
+        vc.drawType = DrawType_ImageWithText;
+    } else if (indexPath.row == 12) {
+        vc.drawType = DrawType_ImageClip;
+    } else if (indexPath.row == 13) {
+        vc.drawType = DrawType_CutScreen;
+    } else if (indexPath.row == 14) {
+        vc.drawType = DrawType_CutImage;
+    } else if (indexPath.row == 15) {
+        vc.drawType = DrawType_ClearImage;
+    } else if (indexPath.row == 16) {
+        vc.drawType = DrawType_Clock;
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

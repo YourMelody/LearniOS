@@ -22,6 +22,7 @@
 
 /*
  NSOperation、NSOperationQueue是基于GCD的封装，完全面向对象
+ 任务执行状态控制：isReady、isExecuting、isFinished、isCancelled
  */
 
 - (void)viewDidLoad {
@@ -137,7 +138,7 @@
     
     [queue setSuspended:YES]; 将正在执行的任务执行完成之后，暂停后续任务；可以恢复
     [queue setSuspended:NO];  继续执行任务
-    [queue cancelAllOperations]; 取消所有任务，不可恢复
+    [queue cancelAllOperations]; 取消所有任务，不可恢复 
  */
 #pragma mark - 2、InvocationOperation配合队列
 - (void)invocation_with_queue {
@@ -342,6 +343,7 @@
 }
 
 - (void)saleTicketSynchronized {
+    // @synchronized一般在单例中使用，保证在多线程环境下创建单例是唯一的
     while (1) {
         @synchronized (self) {
             if (self.ticketCount > 0) {

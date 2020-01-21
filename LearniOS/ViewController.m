@@ -11,6 +11,10 @@
 #import "NSOperationTableVC.h"
 #import "TransAndGestTableVC.h"
 #import "QuartzTableVC.h"
+#import "IndexTableVC.h"
+#import "CategoryVC.h"
+#import "RuntimeVC.h"
+#import "RAMManagerVC.h"
 
 @interface ViewController ()
 
@@ -26,7 +30,11 @@
         @"1、GCD相关",
         @"2、NSOperation相关",
         @"3、transform、touch和手势相关",
-        @"4、Quartz2D相关"
+        @"4、Quartz2D相关",
+        @"5、面试之UI视图相关",
+        @"6、面试之OC语言相关",
+        @"7、面试之Runtime相关",
+        @"8、面试之内存管理相关 "
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -54,6 +62,18 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 3) {
         QuartzTableVC *vc = [[QuartzTableVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 4) {
+        IndexTableVC *vc = [[IndexTableVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 5) {
+        CategoryVC *vc = [[CategoryVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 6) {
+        RuntimeVC *vc = [[RuntimeVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 7) {
+        RAMManagerVC *vc = [[RAMManagerVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

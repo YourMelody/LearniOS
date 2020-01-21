@@ -22,6 +22,12 @@ typedef NS_ENUM(NSInteger, DrawType) {
     DrawType_Snow,      // 下雪
     DrawType_Table,     // 上下文栈相关
     DrawType_Translate, // 上下文的矩阵操作
+    DrawType_ImageWithText,     // 图片添加水印
+    DrawType_ImageClip,         // 图片简单裁剪
+    DrawType_CutScreen,         // 截屏生成图片
+    DrawType_CutImage,          // 截图
+    DrawType_ClearImage,        // 擦除图片
+    DrawType_Clock,             // 手势解锁
 };
 
 @interface DrawView : UIView

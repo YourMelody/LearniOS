@@ -10,6 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawViewController">
             <connections>
                 <outlet property="drawV" destination="8mu-zq-I2i" id="cxJ-pL-PMQ"/>
+                <outlet property="imageHeight" destination="hbe-Jp-A5Y" id="YqU-ZV-OJV"/>
+                <outlet property="imageV" destination="D4I-6a-z7g" id="2Pg-AW-LZ1"/>
+                <outlet property="imageWidth" destination="GK2-R3-BHC" id="qet-Ml-Ob3"/>
                 <outlet property="mySlider" destination="jNH-rl-ZgQ" id="uD5-9s-cGf"/>
                 <outlet property="progressLab" destination="gGA-0P-EGH" id="fZx-3E-uQI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,6 +42,13 @@
                         <action selector="changeProgress:" destination="-1" eventType="valueChanged" id="Oul-cM-lax"/>
                     </connections>
                 </slider>
+                <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4I-6a-z7g">
+                    <rect key="frame" x="15" y="333" width="384" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="384" id="GK2-R3-BHC"/>
+                        <constraint firstAttribute="height" constant="240" id="hbe-Jp-A5Y"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -46,11 +56,13 @@
                 <constraint firstItem="jNH-rl-ZgQ" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="150" id="A7l-FA-AvC"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8mu-zq-I2i" secondAttribute="bottom" id="Hgj-af-a5C"/>
                 <constraint firstItem="8mu-zq-I2i" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="L1o-AJ-NeI"/>
+                <constraint firstItem="D4I-6a-z7g" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="MRE-z7-rNN"/>
                 <constraint firstItem="jNH-rl-ZgQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="NR0-Eq-b98"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8mu-zq-I2i" secondAttribute="trailing" id="SPs-uz-ywP"/>
                 <constraint firstItem="jNH-rl-ZgQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="cFp-cU-FwM"/>
                 <constraint firstItem="gGA-0P-EGH" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="e6G-V5-apx"/>
                 <constraint firstItem="gGA-0P-EGH" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="njq-Zr-LfY"/>
+                <constraint firstItem="D4I-6a-z7g" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="zVP-ia-4SE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="139" y="113"/>

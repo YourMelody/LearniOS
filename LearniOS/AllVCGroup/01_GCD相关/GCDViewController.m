@@ -55,7 +55,8 @@
         @"18、GCD快速迭代",
         @"19、GCD延时操作",
         @"20、GCD信号量",
-        @"21、GCD定时器"
+        @"21、GCD定时器",
+        @"22、练习测试"
     ];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -125,6 +126,8 @@
         [self gcd_semaphore];
     } else if (indexPath.row == 20) {
         [self gcd_timer];
+    } else if (indexPath.row == 21) {
+        [self test];
     }
 }
 
@@ -693,4 +696,53 @@
     // 开启定时器
     dispatch_resume(self.timer);
 }
+
+#pragma mark - 22、练习测试
+- (void)test {
+    dispatch_queue_t queue_concurrent = dispatch_queue_create("test1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue_serial = dispatch_queue_create("test2", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue_global = dispatch_get_global_queue(0, 0);
+    
+    // 打印顺序：12345
+    NSLog(@"1");
+    dispatch_sync(queue_concurrent, ^{
+        NSLog(@"2");
+        dispatch_sync(queue_concurrent, ^{
+            NSLog(@"3");
+        });
+        NSLog(@"4");
+    });
+    NSLog(@"5");
+    
+    NSLog(@"=====分割线=====");
+//    // 打印顺序：12然后线程死锁
+//    NSLog(@"1");
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"2");
+//        dispatch_sync(queue_serial, ^{
+//            NSLog(@"3");
+//        });
+//        NSLog(@"4");
+//    });
+//    NSLog(@"5");
+    
+    // 打印顺序：123，after---2不执行
+    dispatch_async(queue_global, ^{
+        NSLog(@"1");
+        // 当前子线程没有开启RunLoop，因此该方法失效
+        [self performSelector:@selector(printLog:) withObject:@(YES) afterDelay:0];
+        [self performSelector:@selector(printLog:) withObject:@(NO)];
+        NSLog(@"3");
+    });
+    NSLog(@"=====分割线=====");
+}
+
+- (void)printLog:(BOOL)param {
+    if (param) {
+        NSLog(@"after---2");
+    } else {
+        NSLog(@"2");
+    }
+}
+
 @end

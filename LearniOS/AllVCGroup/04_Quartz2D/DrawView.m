@@ -298,7 +298,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    // 注意：使用CADisplayLink，会对其target产生强引用。应该在delloc之前，手动释放。这里是点击屏幕（touchesBegan:中）释放。
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (self.drawType == DrawType_Snow) {
             // 屏幕刷新会调用snowDown。（屏幕每秒刷新60次）
             self.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(snowDown)];
@@ -331,21 +332,95 @@
 #pragma mark - 10、上下文栈相关
 - (void)contextRefTableFunction {
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
-    // 1、保存当前上下文状态（默认状态：黑色，宽度为1）
+    CGContextSetLineCap(contextRef, kCGLineCapRound);
+    CGContextSetLineJoin(contextRef, kCGLineJoinRound);
+    
+    // 1、保存当前上下文状态（默认状态：灰色，宽度为1）
     CGContextSaveGState(contextRef);
-    
     // 第一条线：黑色，宽度为1
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(100, 100)];
-    [path addLineToPoint:CGPointMake(300, 100)];
-    [path stroke];
+    UIBezierPath *path1 = [UIBezierPath bezierPath];
+    [path1 moveToPoint:CGPointMake(100, 100)];
+    [path1 addLineToPoint:CGPointMake(300, 100)];
+    CGContextAddPath(contextRef, path1.CGPath);
+    CGContextStrokePath(contextRef);
     
+    
+    
+    // 2、修改上下文状态并保存
+    // 第二条线：红色，宽度为5
+    UIBezierPath *path2 = [UIBezierPath bezierPath];
+    [path2 moveToPoint:CGPointMake(300, 100)];
+    [path2 addLineToPoint:CGPointMake(100, 300)];
     CGContextSetLineWidth(contextRef, 5);
+    [[UIColor redColor] set];
+    CGContextSaveGState(contextRef);
+    CGContextAddPath(contextRef, path2.CGPath);
+    CGContextStrokePath(contextRef);
+    
+    
+    
+    // 3、修改上下文状态并保存
+    CGContextSetLineWidth(contextRef, 10);
+    [[UIColor blueColor] set];
+    CGContextSaveGState(contextRef);
+    // 第三条线：蓝色，宽度为10
+    UIBezierPath *path3 = [UIBezierPath bezierPath];
+    [path3 moveToPoint:CGPointMake(100, 300)];
+    [path3 addLineToPoint:CGPointMake(100, 100)];
+    CGContextAddPath(contextRef, path3.CGPath);
+    CGContextStrokePath(contextRef);
+    
+    
+    
+    // 4、修改上下文状态并保存
+    CGContextSetLineWidth(contextRef, 5);
+    CGContextSaveGState(contextRef);
+    // 第四条线：宽度为5，颜色不变为蓝色
+    UIBezierPath *path4 = [UIBezierPath bezierPath];
+    [path4 moveToPoint:CGPointMake(100, 100)];
+    [path4 addLineToPoint:CGPointMake(300, 300)];
+    CGContextAddPath(contextRef, path4.CGPath);
+    CGContextStrokePath(contextRef);
+    
+    
+    
+    // 5、修改上下文状态并保存
+    [[UIColor darkGrayColor] set];
+    CGContextSaveGState(contextRef);
+    // 第五条线：颜色为darkGray，宽度不变为5
+    UIBezierPath *path5 = [UIBezierPath bezierPath];
+    [path5 moveToPoint:CGPointMake(300, 300)];
+    [path5 addLineToPoint:CGPointMake(300, 100)];
+    CGContextAddPath(contextRef, path5.CGPath);
+    CGContextStrokePath(contextRef);
+    
+    
+    
+    // 6、从上下文栈中取状态并渲染，第六条线：连续从栈中取4次，状态为红色，宽度5
+    UIBezierPath *path6 = [UIBezierPath bezierPath];
+    [path6 moveToPoint:CGPointMake(100, 300)];
+    [path6 addQuadCurveToPoint:CGPointMake(300, 300) controlPoint:CGPointMake(200, 400)];
+    CGContextRestoreGState(contextRef);     // darkGray--5
+    CGContextRestoreGState(contextRef);     // blue--5
+    CGContextRestoreGState(contextRef);     // blue--10
+    CGContextRestoreGState(contextRef);     // red--5
+    CGContextAddPath(contextRef, path6.CGPath);
+    CGContextStrokePath(contextRef);
 }
 
 #pragma mark - 11、上下文的矩阵操作
 - (void)contextRefTranslateFunction {
-    
+    CGContextRef contextRef = UIGraphicsGetCurrentContext();
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 200, 160)];
+    // 平移
+    CGContextTranslateCTM(contextRef, 200, 200);
+    // 旋转
+    CGContextRotateCTM(contextRef, M_PI_4);
+    // 缩放
+    CGContextScaleCTM(contextRef, 1.2, 1.2);
+    [[UIColor darkGrayColor] set];
+    CGContextAddPath(contextRef, path.CGPath);
+    CGContextStrokePath(contextRef);
 }
 
 - (void)dealloc {
