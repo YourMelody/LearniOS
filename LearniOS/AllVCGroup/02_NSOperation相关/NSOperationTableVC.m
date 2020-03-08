@@ -22,6 +22,7 @@
 
 /*
  NSOperation、NSOperationQueue是基于GCD的封装，完全面向对象
+ 任务执行状态控制：isReady、isExecuting、isFinished、isCancelled
  */
 
 - (void)viewDidLoad {
@@ -137,7 +138,7 @@
     
     [queue setSuspended:YES]; 将正在执行的任务执行完成之后，暂停后续任务；可以恢复
     [queue setSuspended:NO];  继续执行任务
-    [queue cancelAllOperations]; 取消所有任务，不可恢复
+    [queue cancelAllOperations]; 取消所有任务，不可恢复 
  */
 #pragma mark - 2、InvocationOperation配合队列
 - (void)invocation_with_queue {
@@ -342,6 +343,7 @@
 }
 
 - (void)saleTicketSynchronized {
+    // @synchronized一般在单例中使用，保证在多线程环境下创建单例是唯一的
     while (1) {
         @synchronized (self) {
             if (self.ticketCount > 0) {
@@ -353,6 +355,30 @@
             }
         }
     }
+    
+    /*
+     其他锁相关
+        OSSpinLock自旋锁，循环等待访问，不释放当前资源，多用于轻量级数据访问，例如简单的int值+1/-1操作
+     
+        atomic锁相关
+            能保证对属性的赋值和获取操作是线程安全的，但不能保证对属性的操作是线程安全的
+            例如atomic修饰的数组，可以保证数组的赋值操作是线程安全的，不能保证对数组元素的增加、删除等操作是线程安全的
+        
+        NSLock死锁相关
+            - (void)methodA {
+                [self.lock lock];
+                [self methodB];
+                [self.lock unlock];
+            }
+
+            - (void)methodB {
+                // 对同一把锁连续连续调用lock，因为重入造成死锁
+                // 解决方法，将NSLock换成递归锁 NSRecursiveLock 即可解决
+                [self.lock lock];
+                // 其他操作
+                [self.lock unlock];
+            }
+     */
 }
 
 @end
