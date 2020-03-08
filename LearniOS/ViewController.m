@@ -11,6 +11,10 @@
 #import "NSOperationTableVC.h"
 #import "TransAndGestTableVC.h"
 
+// 底层视频相关
+#import "ObjectiveViewController.h"
+#import "KVCAndKVOVC.h"
+
 @interface ViewController ()
 
 @property (nonatomic, copy)NSArray *dataSource;
@@ -24,7 +28,9 @@
     self.dataSource = @[
         @"1、GCD相关",
         @"2、NSOperation相关",
-        @"3、transform、touch和手势相关"
+        @"3、transform、touch和手势相关",
+        @"4、底层之OC对象",
+        @"5、底层之KVC、KVO"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -49,6 +55,12 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 2) {
         TransAndGestTableVC *vc = [[TransAndGestTableVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 3) {
+        ObjectiveViewController *vc = [[ObjectiveViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 4) {
+        KVCAndKVOVC *vc = [[KVCAndKVOVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
