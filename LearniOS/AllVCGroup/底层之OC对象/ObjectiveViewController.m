@@ -11,19 +11,19 @@
 #import <malloc/malloc.h>
 #import "NSObject+Test.h"
 
-/**********************************   Person   *************************************/
-#pragma mark - Person类，继承自NSObject
-@interface Person : NSObject {
+/**********************************   PersonObj   *************************************/
+#pragma mark - PersonObj类，继承自NSObject
+@interface PersonObj : NSObject {
     int _age;
 }
 @end
 
-@implementation Person
+@implementation PersonObj
 @end
 
 /********************************   Student   ******************************************/
 #pragma mark - Student类，继承自Person
-@interface Student : Person {
+@interface Student : PersonObj {
     int _no;
 }
 @end
@@ -32,7 +32,7 @@
 @end
 
 /********************************   Man   ******************************************/
-@interface Man : Person {
+@interface Man : PersonObj {
     int _height;
     int _weight;
     int _money;
@@ -113,7 +113,7 @@
     NSLog(@"obj所有成员变量占用的总字节数：%zd", class_getInstanceSize([obj class]));        // 8
     NSLog(@"obj指针所指向内存的大小：%zd", malloc_size((__bridge const void *)obj));        // 16
     
-    Person *person = [[Person alloc] init];
+    PersonObj *person = [[PersonObj alloc] init];
     NSLog(@"person成员变量占用字节：%zd", class_getInstanceSize([person class]));            // 16，因为内存对齐
     NSLog(@"person指针所指向内存的大小：%zd", malloc_size((__bridge const void *)person));  // 16
     
@@ -167,7 +167,7 @@
     NSLog(@"%d---%d---%d", class_isMetaClass(objMetaClass1), class_isMetaClass(objClass5), class_isMetaClass(objClass6));
     
     // 由于NSObject的元类对象的superclass->NSObject的类对象，所以能够成功调用NSObject中的-test对象方法。
-    [Person test];
+    [PersonObj test];
 }
 
 @end

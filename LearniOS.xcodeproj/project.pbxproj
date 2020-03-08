@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D2F3FF62415057F00AB9E07 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3FF42415057F00AB9E07 /* ObjectiveViewController.m */; };
 		7D2F3FF72415057F00AB9E07 /* ObjectiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F3FF52415057F00AB9E07 /* ObjectiveViewController.xib */; };
 		7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3FFC24152C3C00AB9E07 /* NSObject+Test.m */; };
 		7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400024153C8500AB9E07 /* KVCAndKVOVC.m */; };
 		7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400324153E7E00AB9E07 /* PersonKVO.m */; };
+		7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */; };
+		7D2F400624154E9800AB9E07 /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C523CC0E1700224A8A /* TransformView.m */; };
+		7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3FF42415057F00AB9E07 /* ObjectiveViewController.m */; };
 		9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */; };
 		9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */; };
 		9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */; };
@@ -37,9 +39,7 @@
 		9A42A9DD23D58C2500E35967 /* RAMManagerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9DB23D58C2500E35967 /* RAMManagerVC.xib */; };
 		9A42A9E323D5B1C100E35967 /* NSTimer+WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9E223D5B1C100E35967 /* NSTimer+WeakTimer.m */; };
 		9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46BB23C9998C00224A8A /* MyOperation.m */; };
-		9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */; };
 		9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */; };
-		9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C523CC0E1700224A8A /* TransformView.m */; };
 		9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C623CC0E1700224A8A /* TransformView.xib */; };
 		9AAB46CA23CC123900224A8A /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C923CC123900224A8A /* icon_logo.png */; };
 		9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46CC23CC39FB00224A8A /* GestureVC.m */; };
@@ -227,9 +227,6 @@
 		9A32B23523C701C800F6CEAA /* AllVCGroup */ = {
 			isa = PBXGroup;
 			children = (
-				9AAB46BE23CC06AB00224A8A /* Transorm和手势等 */,
-				9AAB46BD23C9D5B700224A8A /* GCD相关 */,
-				9A1F493623C880D600FA6CC8 /* NSOperation相关 */,
 				7D2F3FF22415052200AB9E07 /* 底层之OC对象 */,
 				7D2F3FFE24153C5700AB9E07 /* 底层之KVC和KVO */,
 				9AAB46BD23C9D5B700224A8A /* 01_GCD相关 */,
@@ -436,6 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */,
+				7D2F400624154E9800AB9E07 /* TransformView.m in Sources */,
+				7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */,
 				7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */,
 				9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */,
 				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
@@ -456,20 +456,14 @@
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				9A32B23923C7021000F6CEAA /* GCDViewController.m in Sources */,
 				7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */,
-				9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */,
-				7D2F3FF62415057F00AB9E07 /* ObjectiveViewController.m in Sources */,
-				9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */,
 				7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */,
 				9A42A9CE23D53A1700E35967 /* PersonObsever.m in Sources */,
 				9AAB46F323D0558D00224A8A /* ClockView.m in Sources */,
 				9A42A9E323D5B1C100E35967 /* NSTimer+WeakTimer.m in Sources */,
 				9ACCC64023D3F39D0016EF17 /* ViewReusePool.m in Sources */,
 				9A42A9DC23D58C2500E35967 /* RAMManagerVC.m in Sources */,
-				9A32B22123C6F49A00F6CEAA /* SceneDelegate.m in Sources */,
-				9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */,
 				9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */,
 				9A42A9CA23D4581000E35967 /* CategoryVC.m in Sources */,
-				9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */,
 				9A42A9D323D54B4600E35967 /* RuntimeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
