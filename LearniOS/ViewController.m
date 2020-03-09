@@ -19,6 +19,8 @@
 // 底层视频相关
 #import "ObjectiveViewController.h"
 #import "KVCAndKVOVC.h"
+#import "CategoryViewController.h"
+#import "BlockViewController.h"
 
 @interface ViewController ()
 
@@ -40,7 +42,9 @@
         @"7、面试之Runtime相关",
         @"8、面试之内存管理相关 ",
         @"9、底层之OC对象",
-        @"10、底层之KVC、KVO"
+        @"10、底层之KVC、KVO",
+        @"11、底层之Category",
+        @"12、底层之block"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -86,6 +90,12 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 9) {
         KVCAndKVOVC *vc = [[KVCAndKVOVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 10) {
+        CategoryViewController *vc = [[CategoryViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 11) {
+        BlockViewController *vc = [[BlockViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

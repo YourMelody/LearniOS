@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface PersonKVO : NSObject
+{
+    @public
+    int _age;
+    int _weight;
+}
 
 @property(nonatomic, assign)int age;
 @property(nonatomic, assign)int height;
