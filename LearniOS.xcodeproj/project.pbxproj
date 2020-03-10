@@ -3,14 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2F3FF72415057F00AB9E07 /* ObjectiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F3FF52415057F00AB9E07 /* ObjectiveViewController.xib */; };
+		7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3FFC24152C3C00AB9E07 /* NSObject+Test.m */; };
+		7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400024153C8500AB9E07 /* KVCAndKVOVC.m */; };
+		7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400324153E7E00AB9E07 /* PersonKVO.m */; };
+		7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */; };
+		7D2F400624154E9800AB9E07 /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C523CC0E1700224A8A /* TransformView.m */; };
+		7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3FF42415057F00AB9E07 /* ObjectiveViewController.m */; };
+		7D2F400B2415E91000AB9E07 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400A2415E91000AB9E07 /* CategoryViewController.m */; };
+		7D2F400E2415F61F00AB9E07 /* PersonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F400D2415F61F00AB9E07 /* PersonCategory.m */; };
+		7D2F40112415F64100AB9E07 /* PersonCategory+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40102415F64100AB9E07 /* PersonCategory+Test1.m */; };
+		7D2F40142415F64C00AB9E07 /* PersonCategory+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40132415F64C00AB9E07 /* PersonCategory+Test2.m */; };
+		7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40162415F7F900AB9E07 /* StudentCategory.m */; };
+		7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40192415F80800AB9E07 /* StudentCategory+Test1.m */; };
+		7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */; };
+		7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F402024164B2000AB9E07 /* BlockViewController.m */; };
 		9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */; };
 		9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */; };
 		9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */; };
-		9A32B22123C6F49A00F6CEAA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B22023C6F49A00F6CEAA /* SceneDelegate.m */; };
 		9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B22323C6F49A00F6CEAA /* ViewController.m */; };
 		9A32B22723C6F49A00F6CEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A32B22523C6F49A00F6CEAA /* Main.storyboard */; };
 		9A32B22923C6F49D00F6CEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A32B22823C6F49D00F6CEAA /* Assets.xcassets */; };
@@ -39,9 +53,7 @@
 		9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9F223D7023B00E35967 /* LeetCodeTableVC.m */; };
 		9A42A9F523D7023B00E35967 /* LeetCodeTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9F323D7023B00E35967 /* LeetCodeTableVC.xib */; };
 		9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46BB23C9998C00224A8A /* MyOperation.m */; };
-		9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C023CC08F800224A8A /* TransAndGestTableVC.m */; };
 		9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */; };
-		9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46C523CC0E1700224A8A /* TransformView.m */; };
 		9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C623CC0E1700224A8A /* TransformView.xib */; };
 		9AAB46CA23CC123900224A8A /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C923CC123900224A8A /* icon_logo.png */; };
 		9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46CC23CC39FB00224A8A /* GestureVC.m */; };
@@ -61,6 +73,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D2F3FF32415057F00AB9E07 /* ObjectiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveViewController.h; sourceTree = "<group>"; };
+		7D2F3FF42415057F00AB9E07 /* ObjectiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveViewController.m; sourceTree = "<group>"; };
+		7D2F3FF52415057F00AB9E07 /* ObjectiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectiveViewController.xib; sourceTree = "<group>"; };
+		7D2F3FFB24152C3C00AB9E07 /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
+		7D2F3FFC24152C3C00AB9E07 /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
+		7D2F3FFF24153C8500AB9E07 /* KVCAndKVOVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCAndKVOVC.h; sourceTree = "<group>"; };
+		7D2F400024153C8500AB9E07 /* KVCAndKVOVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCAndKVOVC.m; sourceTree = "<group>"; };
+		7D2F400224153E7E00AB9E07 /* PersonKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonKVO.h; sourceTree = "<group>"; };
+		7D2F400324153E7E00AB9E07 /* PersonKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonKVO.m; sourceTree = "<group>"; };
+		7D2F40092415E91000AB9E07 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		7D2F400A2415E91000AB9E07 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		7D2F400C2415F61F00AB9E07 /* PersonCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCategory.h; sourceTree = "<group>"; };
+		7D2F400D2415F61F00AB9E07 /* PersonCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCategory.m; sourceTree = "<group>"; };
+		7D2F400F2415F64100AB9E07 /* PersonCategory+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonCategory+Test1.h"; sourceTree = "<group>"; };
+		7D2F40102415F64100AB9E07 /* PersonCategory+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonCategory+Test1.m"; sourceTree = "<group>"; };
+		7D2F40122415F64C00AB9E07 /* PersonCategory+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonCategory+Test2.h"; sourceTree = "<group>"; };
+		7D2F40132415F64C00AB9E07 /* PersonCategory+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonCategory+Test2.m"; sourceTree = "<group>"; };
+		7D2F40152415F7F900AB9E07 /* StudentCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentCategory.h; sourceTree = "<group>"; };
+		7D2F40162415F7F900AB9E07 /* StudentCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentCategory.m; sourceTree = "<group>"; };
+		7D2F40182415F80800AB9E07 /* StudentCategory+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudentCategory+Test1.h"; sourceTree = "<group>"; };
+		7D2F40192415F80800AB9E07 /* StudentCategory+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "StudentCategory+Test1.m"; sourceTree = "<group>"; };
+		7D2F401B2415F80F00AB9E07 /* StudentCategory+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudentCategory+Test2.h"; sourceTree = "<group>"; };
+		7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "StudentCategory+Test2.m"; sourceTree = "<group>"; };
+		7D2F401F24164B2000AB9E07 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		7D2F402024164B2000AB9E07 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		9A1715FE23C7202E0036BBA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9A1F493723C8817B00FA6CC8 /* NSOperationTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationTableVC.h; sourceTree = "<group>"; };
 		9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationTableVC.m; sourceTree = "<group>"; };
@@ -68,8 +105,6 @@
 		9A32B21923C6F49A00F6CEAA /* LearniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A32B21C23C6F49A00F6CEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A32B21F23C6F49A00F6CEAA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		9A32B22023C6F49A00F6CEAA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		9A32B22223C6F49A00F6CEAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9A32B22323C6F49A00F6CEAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A32B22623C6F49A00F6CEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +194,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2F3FF22415052200AB9E07 /* 09_底层之OC对象 */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F3FF32415057F00AB9E07 /* ObjectiveViewController.h */,
+				7D2F3FF42415057F00AB9E07 /* ObjectiveViewController.m */,
+				7D2F3FF52415057F00AB9E07 /* ObjectiveViewController.xib */,
+				7D2F3FFB24152C3C00AB9E07 /* NSObject+Test.h */,
+				7D2F3FFC24152C3C00AB9E07 /* NSObject+Test.m */,
+			);
+			path = "09_底层之OC对象";
+			sourceTree = "<group>";
+		};
+		7D2F3FFE24153C5700AB9E07 /* 10_底层之KVC和KVO */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F3FFF24153C8500AB9E07 /* KVCAndKVOVC.h */,
+				7D2F400024153C8500AB9E07 /* KVCAndKVOVC.m */,
+				7D2F400224153E7E00AB9E07 /* PersonKVO.h */,
+				7D2F400324153E7E00AB9E07 /* PersonKVO.m */,
+			);
+			path = "10_底层之KVC和KVO";
+			sourceTree = "<group>";
+		};
+		7D2F40082415E8DC00AB9E07 /* 11_底层之Category */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F40092415E91000AB9E07 /* CategoryViewController.h */,
+				7D2F400A2415E91000AB9E07 /* CategoryViewController.m */,
+				7D2F400C2415F61F00AB9E07 /* PersonCategory.h */,
+				7D2F400D2415F61F00AB9E07 /* PersonCategory.m */,
+				7D2F400F2415F64100AB9E07 /* PersonCategory+Test1.h */,
+				7D2F40102415F64100AB9E07 /* PersonCategory+Test1.m */,
+				7D2F40122415F64C00AB9E07 /* PersonCategory+Test2.h */,
+				7D2F40132415F64C00AB9E07 /* PersonCategory+Test2.m */,
+				7D2F40152415F7F900AB9E07 /* StudentCategory.h */,
+				7D2F40162415F7F900AB9E07 /* StudentCategory.m */,
+				7D2F40182415F80800AB9E07 /* StudentCategory+Test1.h */,
+				7D2F40192415F80800AB9E07 /* StudentCategory+Test1.m */,
+				7D2F401B2415F80F00AB9E07 /* StudentCategory+Test2.h */,
+				7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */,
+			);
+			path = "11_底层之Category";
+			sourceTree = "<group>";
+		};
+		7D2F401E24164AFA00AB9E07 /* 12_底层之block */ = {
+			isa = PBXGroup;
+			children = (
+				7D2F401F24164B2000AB9E07 /* BlockViewController.h */,
+				7D2F402024164B2000AB9E07 /* BlockViewController.m */,
+			);
+			path = "12_底层之block";
+			sourceTree = "<group>";
+		};
 		9A1F493623C880D600FA6CC8 /* 02_NSOperation相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,8 +281,6 @@
 				9A32B23523C701C800F6CEAA /* AllVCGroup */,
 				9A32B21C23C6F49A00F6CEAA /* AppDelegate.h */,
 				9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */,
-				9A32B21F23C6F49A00F6CEAA /* SceneDelegate.h */,
-				9A32B22023C6F49A00F6CEAA /* SceneDelegate.m */,
 				9A32B22223C6F49A00F6CEAA /* ViewController.h */,
 				9A32B22323C6F49A00F6CEAA /* ViewController.m */,
 				9A1715FE23C7202E0036BBA2 /* PrefixHeader.pch */,
@@ -221,6 +307,10 @@
 				9A42A9E423D6A7FD00E35967 /* 09_面试之Block相关 */,
 				9A42A9EA23D6D98100E35967 /* 10_面试之RunLoop相关 */,
 				9A42A9F023D700AF00E35967 /* 11_算法题 */,
+				7D2F3FF22415052200AB9E07 /* 09_底层之OC对象 */,
+				7D2F3FFE24153C5700AB9E07 /* 10_底层之KVC和KVO */,
+				7D2F40082415E8DC00AB9E07 /* 11_底层之Category */,
+				7D2F401E24164AFA00AB9E07 /* 12_底层之block */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -393,11 +483,12 @@
 				TargetAttributes = {
 					9A32B21823C6F49A00F6CEAA = {
 						CreatedOnToolsVersion = 11.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 9A32B21423C6F49A00F6CEAA /* Build configuration list for PBXProject "LearniOS" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -422,6 +513,7 @@
 				9AAB46EA23CDA01D00224A8A /* DrawViewController.xib in Resources */,
 				9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */,
 				9A32B22C23C6F49D00F6CEAA /* LaunchScreen.storyboard in Resources */,
+				7D2F3FF72415057F00AB9E07 /* ObjectiveViewController.xib in Resources */,
 				9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */,
 				9A42A9EF23D6D99B00E35967 /* RunLoopVC.xib in Resources */,
 				9A32B22923C6F49D00F6CEAA /* Assets.xcassets in Resources */,
@@ -452,6 +544,13 @@
 				9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */,
 				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
 				9A42A9EE23D6D99B00E35967 /* RunLoopVC.m in Sources */,
+				7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */,
+				7D2F400624154E9800AB9E07 /* TransformView.m in Sources */,
+				7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */,
+				7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */,
+				9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */,
+				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
+				7D2F400E2415F61F00AB9E07 /* PersonCategory.m in Sources */,
 				9A42A9C323D44F7900E35967 /* Person.m in Sources */,
 				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A42A9BE23D4254400E35967 /* CustomButton.m in Sources */,
@@ -463,23 +562,29 @@
 				9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */,
 				9A32B22F23C6F49D00F6CEAA /* main.m in Sources */,
 				9A42A9D723D57D9200E35967 /* RuntimeObj.m in Sources */,
+				7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */,
+				7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
 				9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */,
 				9A42A9C623D44F8A00E35967 /* Person+Student.m in Sources */,
 				9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
+				7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */,
+				7D2F40112415F64100AB9E07 /* PersonCategory+Test1.m in Sources */,
 				9A32B23923C7021000F6CEAA /* GCDViewController.m in Sources */,
+				7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */,
+				7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */,
+				7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */,
 				9A42A9CE23D53A1700E35967 /* PersonObsever.m in Sources */,
+				7D2F400B2415E91000AB9E07 /* CategoryViewController.m in Sources */,
 				9AAB46F323D0558D00224A8A /* ClockView.m in Sources */,
 				9A42A9E323D5B1C100E35967 /* NSTimer+WeakTimer.m in Sources */,
 				9ACCC64023D3F39D0016EF17 /* ViewReusePool.m in Sources */,
 				9A42A9DC23D58C2500E35967 /* RAMManagerVC.m in Sources */,
-				9A32B22123C6F49A00F6CEAA /* SceneDelegate.m in Sources */,
-				9AAB46C723CC0E1700224A8A /* TransformView.m in Sources */,
 				9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */,
 				9A42A9CA23D4581000E35967 /* CategoryVC.m in Sources */,
-				9AAB46C223CC08F800224A8A /* TransAndGestTableVC.m in Sources */,
 				9A42A9D323D54B4600E35967 /* RuntimeVC.m in Sources */,
+				7D2F40142415F64C00AB9E07 /* PersonCategory+Test2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,10 +730,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LearniOS/PrefixHeader.pch;
 				INFOPLIST_FILE = LearniOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = funny.com.LearniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -645,10 +748,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LearniOS/PrefixHeader.pch;
 				INFOPLIST_FILE = LearniOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = funny.com.LearniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
