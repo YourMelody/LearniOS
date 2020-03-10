@@ -17,6 +17,7 @@
 #import "RAMManagerVC.h"
 #import "BlockVC.h"
 #import "RunLoopVC.h"
+#import "LeetCodeTableVC.h"
 
 // 底层视频相关
 #import "ObjectiveViewController.h"
@@ -45,10 +46,11 @@
         @"8、面试之内存管理相关",
         @"9、面试之Block相关",
         @"10、面试之Runloop相关 ",
-        @"11、底层之OC对象",
-        @"12、底层之KVC、KVO",
-        @"13、底层之Category",
-        @"14、底层之block"
+        @"11、算法题",
+        @"12、底层之OC对象",
+        @"13、底层之KVC、KVO",
+        @"14、底层之Category",
+        @"15、底层之block"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -106,19 +108,23 @@
         RunLoopVC *vc = [[RunLoopVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 10) {
-        // 11、底层之OC对象
-        ObjectiveViewController *vc = [[ObjectiveViewController alloc] init];
+        // 11、算法题
+        LeetCodeTableVC *vc = [[LeetCodeTableVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 11) {
-        // 12、底层之KVC、KVO
-        KVCAndKVOVC *vc = [[KVCAndKVOVC alloc] init];
+        // 12、底层之OC对象
+        ObjectiveViewController *vc = [[ObjectiveViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 12) {
-        // 13、底层之Category
-        CategoryViewController *vc = [[CategoryViewController alloc] init];
+        // 13、底层之KVC、KVO
+        KVCAndKVOVC *vc = [[KVCAndKVOVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 13) {
-        // 14、底层之block
+        // 14、底层之Category
+        CategoryViewController *vc = [[CategoryViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 14) {
+        // 15、底层之block
         BlockViewController *vc = [[BlockViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
