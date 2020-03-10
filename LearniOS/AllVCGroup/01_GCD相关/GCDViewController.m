@@ -256,7 +256,7 @@
 #pragma mark - 6、异步函数 + 并发队列
 - (void)async_concurrent {
     // 会开辟多条线程，所有任务在不同线程并发执行。
-    // (start -> end -> 111 -> 222 -> 333) start和end在当前线程，111、222、333在多个子线程
+    // (start -> end -> 111/222/333) start和end在当前线程，111、222、333在多个子线程
     dispatch_queue_t queue = dispatch_queue_create("async_concurrent_test", DISPATCH_QUEUE_CONCURRENT);
     NSLog(@"start---%@", [NSThread currentThread]);
     dispatch_async(queue, ^{

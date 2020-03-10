@@ -15,6 +15,8 @@
 #import "CategoryVC.h"
 #import "RuntimeVC.h"
 #import "RAMManagerVC.h"
+#import "BlockVC.h"
+#import "RunLoopVC.h"
 
 @interface ViewController ()
 
@@ -34,7 +36,8 @@
         @"5、面试之UI视图相关",
         @"6、面试之OC语言相关",
         @"7、面试之Runtime相关",
-        @"8、面试之内存管理相关 "
+        @"8、面试之内存管理相关",
+        @"9、面试之Block相关"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -74,6 +77,12 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 7) {
         RAMManagerVC *vc = [[RAMManagerVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 8) {
+        BlockVC *vc = [[BlockVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 9) {
+        RunLoopVC *vc = [[RunLoopVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
