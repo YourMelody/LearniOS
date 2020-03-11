@@ -44,7 +44,7 @@
      3、如何手动触发KVO
      	主动调用willChangeValueForKey: 和 didChangeValueForKey:
      4、直接修改成员变量的值，而不是通过set方法修改，不能触发KVO
-     5、通过KVC修改属性值，能否触发KVO？
+     5、通过KVC修改属性值，能否触发KVO？ 可以触发
      */
     self.person = [[PersonKVO alloc] init];
     self.person.age = 18;
@@ -115,6 +115,7 @@
 - (void)dealloc {
     [self.person removeObserver:self forKeyPath:@"age"];
     [self.person removeObserver:self forKeyPath:@"height"];
+    [self.person removeObserver:self forKeyPath:@"weight"];
 }
 
 - (void)printMethodNamesOfClass:(Class)cls {

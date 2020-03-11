@@ -65,11 +65,11 @@
               因此父类的+initialize可能被多次调用
      		. 如果分类实现了+initialize，就覆盖类本身的+initialize调用
      7、分类中可以添加属性，但是默认只会产生对应属性的get\set方法声明，并没有产生成员变量，
-     	以及get/set方法的实现。另外，分类中不能直接添加成员变量。
+     	以及get/set方法的实现。另外，分类中不能直接添加成员变量，可以通过关联对象间接添加。
      8、分类中添加成员变量的方法：
      	存：objc_setAssociatedObject		取：objc_getAssociatedObject
      	需要注意，分类中添加的成员变量，跟类原有的成员变量存储方式不一样。类原有的成员变量列表
-     	是只读的，不能在运行添加或删除。
+     	是只读的，不能在运行时添加或删除。
      9、关联对象的原理：
      	关联的对象不是放到原来的类信息中，而是放到一个全局的AssociationsHashMap中，由AssociationsManager管理。
      

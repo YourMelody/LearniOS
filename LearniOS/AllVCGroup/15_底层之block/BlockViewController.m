@@ -106,14 +106,23 @@ static int d = 10;
      	. GCD的block
      
      4、当block内部访问了对象类型的auto变量时，block的Desc内部会多两个函数：copy和dispose
-     	. 如果block在栈上，block内部永远不会对auto变量产生强饮用（不论MRC/ARC）
+     	. 如果block在栈上，block内部永远不会对auto变量产生强引用（不论MRC/ARC）
      	. 如果block拷贝到堆上， 会调用copy函数，copy内部又会调用_Block_object_assign函数，
      	  该函数会根据auto变量的修饰符（__strong __weak __unsafe_unretained）做出
      	  相应的操作（即产生强引用/弱引用）
           如果block从堆上移除，会调用block内部的dispose函数，dispose内部又会调用
      	  _Block_object_dispose函数。该函数会自动释放引用的auto变量，类似于release
-     	即 copy函数    ---  栈上的block复制到堆上时
-           dispose函数 ---  堆上的block被废弃时
+     	即 copy函数    ---  栈上的block复制到堆上时调用
+           dispose函数 ---  堆上的block被废弃时调用
+     
+     5、block对 对象类型的auto变量、__block变量 的内存管理：
+     	. 当block在栈上时，对它们不会产生强引用
+     	. 当block拷贝到堆上时，都会通过copy（_Block_object_assign）函数处理它们
+        . 当block从堆上移除时，都会通过dispose（_Block_object_dispose）函数释放它们
+     
+     6、循环引用问题：
+     	. __weak：不会产生强引用，指向的对象销毁时，会自动让指针置为nil
+     	. __unsafe_unretained：不会产生强引用，不安全，指向的对象销毁时，指针存储的地址值不变
      */
     
     void(^block)(void) = ^{
