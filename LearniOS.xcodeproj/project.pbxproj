@@ -22,6 +22,12 @@
 		7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40192415F80800AB9E07 /* StudentCategory+Test1.m */; };
 		7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */; };
 		7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F402024164B2000AB9E07 /* BlockViewController.m */; };
+		7DB2A06E24190F4000AF7913 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A06D24190F4000AF7913 /* RuntimeViewController.m */; };
+		7DB2A071241914F900AF7913 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A070241914F900AF7913 /* RuntimePerson.m */; };
+		7DB2A072241919E400AF7913 /* IndexedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCC64C23D3F95B0016EF17 /* IndexedTableView.m */; };
+		7DB2A073241919FF00AF7913 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9C223D44F7900E35967 /* Person.m */; };
+		7DB2A07624191DF400AF7913 /* RuntimeStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A07524191DF400AF7913 /* RuntimeStudent.m */; };
+		7DB2A0792419213100AF7913 /* RuntimeMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A0782419213100AF7913 /* RuntimeMan.m */; };
 		9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */; };
 		9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */; };
 		9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */; };
@@ -35,7 +41,6 @@
 		9A42A9BA23D3FD9800E35967 /* IndexTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9B823D3FD9800E35967 /* IndexTableVC.m */; };
 		9A42A9BB23D3FD9800E35967 /* IndexTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9B923D3FD9800E35967 /* IndexTableVC.xib */; };
 		9A42A9BE23D4254400E35967 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9BD23D4254400E35967 /* CustomButton.m */; };
-		9A42A9C323D44F7900E35967 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9C223D44F7900E35967 /* Person.m */; };
 		9A42A9C623D44F8A00E35967 /* Person+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9C523D44F8A00E35967 /* Person+Student.m */; };
 		9A42A9CA23D4581000E35967 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9C823D4581000E35967 /* CategoryVC.m */; };
 		9A42A9CB23D4581000E35967 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9C923D4581000E35967 /* CategoryVC.xib */; };
@@ -61,7 +66,6 @@
 		9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D123CC654500224A8A /* HitTestVC.m */; };
 		9AAB46D423CC654500224A8A /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46D223CC654500224A8A /* HitTestVC.xib */; };
 		9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D623CC66D800224A8A /* ShadowView.m */; };
-		9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46D923CD4E3000224A8A /* ChildButton.m */; };
 		9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46E223CD961200224A8A /* QuartzTableVC.m */; };
 		9AAB46E523CD961200224A8A /* QuartzTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46E323CD961200224A8A /* QuartzTableVC.xib */; };
 		9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46E723CDA01D00224A8A /* DrawViewController.m */; };
@@ -69,7 +73,6 @@
 		9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46EC23CDA06400224A8A /* DrawView.m */; };
 		9AAB46F323D0558D00224A8A /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46F223D0558D00224A8A /* ClockView.m */; };
 		9ACCC64023D3F39D0016EF17 /* ViewReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCC63F23D3F39D0016EF17 /* ViewReusePool.m */; };
-		9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCC64C23D3F95B0016EF17 /* IndexedTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,14 @@
 		7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "StudentCategory+Test2.m"; sourceTree = "<group>"; };
 		7D2F401F24164B2000AB9E07 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		7D2F402024164B2000AB9E07 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		7DB2A06C24190F4000AF7913 /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		7DB2A06D24190F4000AF7913 /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		7DB2A06F241914F800AF7913 /* RuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson.h; sourceTree = "<group>"; };
+		7DB2A070241914F900AF7913 /* RuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson.m; sourceTree = "<group>"; };
+		7DB2A07424191DF400AF7913 /* RuntimeStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeStudent.h; sourceTree = "<group>"; };
+		7DB2A07524191DF400AF7913 /* RuntimeStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStudent.m; sourceTree = "<group>"; };
+		7DB2A0772419213100AF7913 /* RuntimeMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMan.h; sourceTree = "<group>"; };
+		7DB2A0782419213100AF7913 /* RuntimeMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMan.m; sourceTree = "<group>"; };
 		9A1715FE23C7202E0036BBA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9A1F493723C8817B00FA6CC8 /* NSOperationTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationTableVC.h; sourceTree = "<group>"; };
 		9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationTableVC.m; sourceTree = "<group>"; };
@@ -247,6 +258,21 @@
 			path = "15_底层之block";
 			sourceTree = "<group>";
 		};
+		7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				7DB2A06C24190F4000AF7913 /* RuntimeViewController.h */,
+				7DB2A06D24190F4000AF7913 /* RuntimeViewController.m */,
+				7DB2A06F241914F800AF7913 /* RuntimePerson.h */,
+				7DB2A070241914F900AF7913 /* RuntimePerson.m */,
+				7DB2A07424191DF400AF7913 /* RuntimeStudent.h */,
+				7DB2A07524191DF400AF7913 /* RuntimeStudent.m */,
+				7DB2A0772419213100AF7913 /* RuntimeMan.h */,
+				7DB2A0782419213100AF7913 /* RuntimeMan.m */,
+			);
+			path = "16_底层之Runtime";
+			sourceTree = "<group>";
+		};
 		9A1F493623C880D600FA6CC8 /* 02_NSOperation相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +337,7 @@
 				7D2F3FFE24153C5700AB9E07 /* 13_底层之KVC和KVO */,
 				7D2F40082415E8DC00AB9E07 /* 14_底层之Category */,
 				7D2F401E24164AFA00AB9E07 /* 15_底层之block */,
+				7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -540,18 +567,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB2A073241919FF00AF7913 /* Person.m in Sources */,
+				7DB2A072241919E400AF7913 /* IndexedTableView.m in Sources */,
 				9A42A9E823D6A82100E35967 /* BlockVC.m in Sources */,
-				9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */,
-				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
 				9A42A9EE23D6D99B00E35967 /* RunLoopVC.m in Sources */,
 				7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */,
 				7D2F400624154E9800AB9E07 /* TransformView.m in Sources */,
 				7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */,
 				7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */,
-				9ACCC64D23D3F95B0016EF17 /* IndexedTableView.m in Sources */,
-				9AAB46DA23CD4E3000224A8A /* ChildButton.m in Sources */,
 				7D2F400E2415F61F00AB9E07 /* PersonCategory.m in Sources */,
-				9A42A9C323D44F7900E35967 /* Person.m in Sources */,
 				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A42A9BE23D4254400E35967 /* CustomButton.m in Sources */,
 				9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */,
@@ -562,6 +586,7 @@
 				9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */,
 				9A32B22F23C6F49D00F6CEAA /* main.m in Sources */,
 				9A42A9D723D57D9200E35967 /* RuntimeObj.m in Sources */,
+				7DB2A071241914F900AF7913 /* RuntimePerson.m in Sources */,
 				7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */,
 				7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
@@ -575,10 +600,13 @@
 				7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */,
 				7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */,
 				7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */,
+				7DB2A0792419213100AF7913 /* RuntimeMan.m in Sources */,
 				9A42A9CE23D53A1700E35967 /* PersonObsever.m in Sources */,
+				7DB2A07624191DF400AF7913 /* RuntimeStudent.m in Sources */,
 				7D2F400B2415E91000AB9E07 /* CategoryViewController.m in Sources */,
 				9AAB46F323D0558D00224A8A /* ClockView.m in Sources */,
 				9A42A9E323D5B1C100E35967 /* NSTimer+WeakTimer.m in Sources */,
+				7DB2A06E24190F4000AF7913 /* RuntimeViewController.m in Sources */,
 				9ACCC64023D3F39D0016EF17 /* ViewReusePool.m in Sources */,
 				9A42A9DC23D58C2500E35967 /* RAMManagerVC.m in Sources */,
 				9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */,

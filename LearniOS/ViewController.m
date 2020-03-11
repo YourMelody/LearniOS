@@ -24,6 +24,7 @@
 #import "KVCAndKVOVC.h"
 #import "CategoryViewController.h"
 #import "BlockViewController.h"
+#import "RuntimeViewController.h"
 
 @interface ViewController ()
 
@@ -50,7 +51,8 @@
         @"12、底层之OC对象",
         @"13、底层之KVC、KVO",
         @"14、底层之Category",
-        @"15、底层之block"
+        @"15、底层之block",
+        @"16、底层之Runtime"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -126,6 +128,10 @@
     } else if (indexPath.row == 14) {
         // 15、底层之block
         BlockViewController *vc = [[BlockViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 15) {
+        // 16、底层之Runtime
+        RuntimeViewController *vc = [[RuntimeViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
