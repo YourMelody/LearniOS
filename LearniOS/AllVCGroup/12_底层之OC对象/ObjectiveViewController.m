@@ -100,7 +100,7 @@
      2、OC的面相对象都是基于C/C++的结构体数据结构实现的
      3、NSObject对象的底层实现为：
      struct NSObject_IMPL {
-     Class isa;
+        Class isa;
      }
      4、一个NSObject对象占用多少内存？
      系统分配了16个字节的空间给NSObject对象，可以通过malloc_size()函数获得（即实际分配的内存大小）。
