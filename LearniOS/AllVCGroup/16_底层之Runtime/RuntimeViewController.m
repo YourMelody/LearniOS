@@ -23,6 +23,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self runtimeBase];
+    
+    [self runtimeObjcMsgSend];
 }
 
 - (void)runtimeBase {
@@ -65,8 +67,8 @@
      		uintptr_t extra_rc                : 19;
         };
      };
-     4、Class、Meta-Class对象的地址，最后三位一定是0。因为ISA_MASK最后三位的二进制一定都是0
-     	（16进制最后一位则为8/0），isa & ISA_MASK 位运算结果就是Class、Meta-Class对象的地址。
+     4、Class、Meta-Class对象的地址，最后三位一定是0。因为ISA_MASK最后三位的二进制都是0
+     	（16进制最后一位为8/0），isa & ISA_MASK 位运算结果就是Class、Meta-Class对象的地址。
      
      5、class_rw_t中的methods、properties、protocols是二维数组，可读可写，
      	包含了类的初始内容、分类中合并过来的内容
@@ -118,6 +120,29 @@
     man.rich = YES;
     man.handsome = NO;
     NSLog(@"%@", man);
+}
+
+- (void)runtimeObjcMsgSend {
+    /*
+     1、objc_msgSend执行流程
+     	. 消息发送
+     	. 动态方法解析
+     		+ (BOOL)resolveInstanceMethod:(SEL)sel;
+     			. class_addMethod(self , sel, IMP, types);
+     		+ (BOOL)resolveClassMethod:(SEL)sel;
+                . class_addMethod(object_getClass(self), sel, IMP, types);
+     		之后会再次重新走消息发送流 程
+     	. 消息转发
+     		. forwardingTargetForSelector:(SEL)aSelector 返回能够处理aSelector的对象
+     		. methodSignaturForSelector:(SEL)aSelector 返回NSMethodSignature方法签名
+     			return [NSMethodSignature signatureWithObjcTypes:"v@:"];
+     		. forwardInvocation:(NSInvocation *)anInvocation 在这里可以处理任何操作
+     			anInvocation封装了一个方法调用：方法调用者、方法名、方法参数
+     			anInvocation.target  anInvocation.selector  [anInvocation getArgument: atIndex]
+     
+     2、dynamic是告诉编译器不用自动生成getter/setter的实现，不自动生成成员变量，
+     	等到运行时再添加方法实现
+     */
 }
 
 @end
