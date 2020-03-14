@@ -28,8 +28,11 @@
 		7DB2A073241919FF00AF7913 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9C223D44F7900E35967 /* Person.m */; };
 		7DB2A07624191DF400AF7913 /* RuntimeStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A07524191DF400AF7913 /* RuntimeStudent.m */; };
 		7DB2A0792419213100AF7913 /* RuntimeMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A0782419213100AF7913 /* RuntimeMan.m */; };
+		9A11145D241C7C4D0048F6DC /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11145C241C7C4D0048F6DC /* RunloopViewController.m */; };
+		9A111460241CDDA00048F6DC /* ZFPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11145F241CDDA00048F6DC /* ZFPermenantThread.m */; };
 		9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */; };
 		9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */; };
+		9A2C28D4241CE66400A1E658 /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C28D3241CE66400A1E658 /* GCDVC.m */; };
 		9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */; };
 		9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B22323C6F49A00F6CEAA /* ViewController.m */; };
 		9A32B22723C6F49A00F6CEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A32B22523C6F49A00F6CEAA /* Main.storyboard */; };
@@ -109,10 +112,16 @@
 		7DB2A07524191DF400AF7913 /* RuntimeStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStudent.m; sourceTree = "<group>"; };
 		7DB2A0772419213100AF7913 /* RuntimeMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMan.h; sourceTree = "<group>"; };
 		7DB2A0782419213100AF7913 /* RuntimeMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMan.m; sourceTree = "<group>"; };
+		9A11145B241C7C4D0048F6DC /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		9A11145C241C7C4D0048F6DC /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		9A11145E241CDDA00048F6DC /* ZFPermenantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFPermenantThread.h; sourceTree = "<group>"; };
+		9A11145F241CDDA00048F6DC /* ZFPermenantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPermenantThread.m; sourceTree = "<group>"; };
 		9A1715FE23C7202E0036BBA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9A1F493723C8817B00FA6CC8 /* NSOperationTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationTableVC.h; sourceTree = "<group>"; };
 		9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationTableVC.m; sourceTree = "<group>"; };
 		9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSOperationTableVC.xib; sourceTree = "<group>"; };
+		9A2C28D2241CE66400A1E658 /* GCDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCDVC.h; path = ../../../../../GCDVC.h; sourceTree = "<group>"; };
+		9A2C28D3241CE66400A1E658 /* GCDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCDVC.m; path = ../../../../../GCDVC.m; sourceTree = "<group>"; };
 		9A32B21923C6F49A00F6CEAA /* LearniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A32B21C23C6F49A00F6CEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -273,6 +282,17 @@
 			path = "16_底层之Runtime";
 			sourceTree = "<group>";
 		};
+		9A11145A241C7C180048F6DC /* 17_底层之Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				9A11145B241C7C4D0048F6DC /* RunloopViewController.h */,
+				9A11145C241C7C4D0048F6DC /* RunloopViewController.m */,
+				9A11145E241CDDA00048F6DC /* ZFPermenantThread.h */,
+				9A11145F241CDDA00048F6DC /* ZFPermenantThread.m */,
+			);
+			path = "17_底层之Runloop";
+			sourceTree = "<group>";
+		};
 		9A1F493623C880D600FA6CC8 /* 02_NSOperation相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +303,15 @@
 				9AAB46BB23C9998C00224A8A /* MyOperation.m */,
 			);
 			path = "02_NSOperation相关";
+			sourceTree = "<group>";
+		};
+		9A2C28D1241CE60900A1E658 /* 18_底层之GCD */ = {
+			isa = PBXGroup;
+			children = (
+				9A2C28D2241CE66400A1E658 /* GCDVC.h */,
+				9A2C28D3241CE66400A1E658 /* GCDVC.m */,
+			);
+			path = "18_底层之GCD";
 			sourceTree = "<group>";
 		};
 		9A32B21023C6F49A00F6CEAA = {
@@ -338,6 +367,8 @@
 				7D2F40082415E8DC00AB9E07 /* 14_底层之Category */,
 				7D2F401E24164AFA00AB9E07 /* 15_底层之block */,
 				7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */,
+				9A11145A241C7C180048F6DC /* 17_底层之Runloop */,
+				9A2C28D1241CE60900A1E658 /* 18_底层之GCD */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -583,16 +614,19 @@
 				9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */,
 				9A42A9BA23D3FD9800E35967 /* IndexTableVC.m in Sources */,
 				9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */,
+				9A111460241CDDA00048F6DC /* ZFPermenantThread.m in Sources */,
 				9AAB46E923CDA01D00224A8A /* DrawViewController.m in Sources */,
 				9A32B22F23C6F49D00F6CEAA /* main.m in Sources */,
 				9A42A9D723D57D9200E35967 /* RuntimeObj.m in Sources */,
 				7DB2A071241914F900AF7913 /* RuntimePerson.m in Sources */,
 				7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */,
+				9A2C28D4241CE66400A1E658 /* GCDVC.m in Sources */,
 				7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
 				9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */,
 				9A42A9C623D44F8A00E35967 /* Person+Student.m in Sources */,
 				9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */,
+				9A11145D241C7C4D0048F6DC /* RunloopViewController.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */,
 				7D2F40112415F64100AB9E07 /* PersonCategory+Test1.m in Sources */,

@@ -99,7 +99,7 @@ static int d = 10;
      	[StackBlock copy]  --> 升级为MallocBlock，从栈复制到堆
      	[MallockBlock copy]--> 引用计数+1
      
-     3、在ARC环境下，编译器会根据情况自动将栈上的block复制到堆上，比如一下情况：
+     3、在ARC环境下，编译器会根据情况自动将栈上的block复制到堆上，比如以下情况：
      	. block作为返回值
      	. 有强指针指向block
      	. block作为Cocoa API中方法名含有UsingBlock的方法参数时
