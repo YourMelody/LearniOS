@@ -22,6 +22,9 @@
 		7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F40192415F80800AB9E07 /* StudentCategory+Test1.m */; };
 		7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */; };
 		7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F402024164B2000AB9E07 /* BlockViewController.m */; };
+		7D85B0CB241D13640033037A /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D85B0CA241D13640033037A /* GCDVC.m */; };
+		7D85B0D1241D25E50033037A /* GCDBaseLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D85B0D0241D25E50033037A /* GCDBaseLock.m */; };
+		7D85B0D4241D299A0033037A /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D85B0D3241D299A0033037A /* OSSpinLockDemo.m */; };
 		7DB2A06E24190F4000AF7913 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A06D24190F4000AF7913 /* RuntimeViewController.m */; };
 		7DB2A071241914F900AF7913 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2A070241914F900AF7913 /* RuntimePerson.m */; };
 		7DB2A072241919E400AF7913 /* IndexedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCC64C23D3F95B0016EF17 /* IndexedTableView.m */; };
@@ -32,7 +35,6 @@
 		9A111460241CDDA00048F6DC /* ZFPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11145F241CDDA00048F6DC /* ZFPermenantThread.m */; };
 		9A1F493A23C8817B00FA6CC8 /* NSOperationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */; };
 		9A1F493B23C8817B00FA6CC8 /* NSOperationTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */; };
-		9A2C28D4241CE66400A1E658 /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C28D3241CE66400A1E658 /* GCDVC.m */; };
 		9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */; };
 		9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32B22323C6F49A00F6CEAA /* ViewController.m */; };
 		9A32B22723C6F49A00F6CEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A32B22523C6F49A00F6CEAA /* Main.storyboard */; };
@@ -104,6 +106,12 @@
 		7D2F401C2415F80F00AB9E07 /* StudentCategory+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "StudentCategory+Test2.m"; sourceTree = "<group>"; };
 		7D2F401F24164B2000AB9E07 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		7D2F402024164B2000AB9E07 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		7D85B0C9241D13640033037A /* GCDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
+		7D85B0CA241D13640033037A /* GCDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
+		7D85B0CF241D25E50033037A /* GCDBaseLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDBaseLock.h; sourceTree = "<group>"; };
+		7D85B0D0241D25E50033037A /* GCDBaseLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBaseLock.m; sourceTree = "<group>"; };
+		7D85B0D2241D299A0033037A /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		7D85B0D3241D299A0033037A /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
 		7DB2A06C24190F4000AF7913 /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		7DB2A06D24190F4000AF7913 /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		7DB2A06F241914F800AF7913 /* RuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson.h; sourceTree = "<group>"; };
@@ -120,8 +128,6 @@
 		9A1F493723C8817B00FA6CC8 /* NSOperationTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationTableVC.h; sourceTree = "<group>"; };
 		9A1F493823C8817B00FA6CC8 /* NSOperationTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationTableVC.m; sourceTree = "<group>"; };
 		9A1F493923C8817B00FA6CC8 /* NSOperationTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSOperationTableVC.xib; sourceTree = "<group>"; };
-		9A2C28D2241CE66400A1E658 /* GCDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCDVC.h; path = ../../../../../GCDVC.h; sourceTree = "<group>"; };
-		9A2C28D3241CE66400A1E658 /* GCDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCDVC.m; path = ../../../../../GCDVC.m; sourceTree = "<group>"; };
 		9A32B21923C6F49A00F6CEAA /* LearniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A32B21C23C6F49A00F6CEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A32B21D23C6F49A00F6CEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -267,6 +273,19 @@
 			path = "15_底层之block";
 			sourceTree = "<group>";
 		};
+		7D85B0C8241D13440033037A /* 18_底层之GCD */ = {
+			isa = PBXGroup;
+			children = (
+				7D85B0C9241D13640033037A /* GCDVC.h */,
+				7D85B0CA241D13640033037A /* GCDVC.m */,
+				7D85B0CF241D25E50033037A /* GCDBaseLock.h */,
+				7D85B0D0241D25E50033037A /* GCDBaseLock.m */,
+				7D85B0D2241D299A0033037A /* OSSpinLockDemo.h */,
+				7D85B0D3241D299A0033037A /* OSSpinLockDemo.m */,
+			);
+			path = "18_底层之GCD";
+			sourceTree = "<group>";
+		};
 		7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,15 +322,6 @@
 				9AAB46BB23C9998C00224A8A /* MyOperation.m */,
 			);
 			path = "02_NSOperation相关";
-			sourceTree = "<group>";
-		};
-		9A2C28D1241CE60900A1E658 /* 18_底层之GCD */ = {
-			isa = PBXGroup;
-			children = (
-				9A2C28D2241CE66400A1E658 /* GCDVC.h */,
-				9A2C28D3241CE66400A1E658 /* GCDVC.m */,
-			);
-			path = "18_底层之GCD";
 			sourceTree = "<group>";
 		};
 		9A32B21023C6F49A00F6CEAA = {
@@ -368,7 +378,7 @@
 				7D2F401E24164AFA00AB9E07 /* 15_底层之block */,
 				7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */,
 				9A11145A241C7C180048F6DC /* 17_底层之Runloop */,
-				9A2C28D1241CE60900A1E658 /* 18_底层之GCD */,
+				7D85B0C8241D13440033037A /* 18_底层之GCD */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -606,6 +616,7 @@
 				7D2F400624154E9800AB9E07 /* TransformView.m in Sources */,
 				7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */,
 				7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */,
+				7D85B0D4241D299A0033037A /* OSSpinLockDemo.m in Sources */,
 				7D2F400E2415F61F00AB9E07 /* PersonCategory.m in Sources */,
 				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A42A9BE23D4254400E35967 /* CustomButton.m in Sources */,
@@ -620,12 +631,13 @@
 				9A42A9D723D57D9200E35967 /* RuntimeObj.m in Sources */,
 				7DB2A071241914F900AF7913 /* RuntimePerson.m in Sources */,
 				7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */,
-				9A2C28D4241CE66400A1E658 /* GCDVC.m in Sources */,
+				7D85B0CB241D13640033037A /* GCDVC.m in Sources */,
 				7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
 				9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */,
 				9A42A9C623D44F8A00E35967 /* Person+Student.m in Sources */,
 				9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */,
+				7D85B0D1241D25E50033037A /* GCDBaseLock.m in Sources */,
 				9A11145D241C7C4D0048F6DC /* RunloopViewController.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */,
