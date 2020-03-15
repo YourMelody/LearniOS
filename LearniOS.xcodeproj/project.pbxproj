@@ -62,6 +62,13 @@
 		9A42A9EF23D6D99B00E35967 /* RunLoopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9ED23D6D99B00E35967 /* RunLoopVC.xib */; };
 		9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42A9F223D7023B00E35967 /* LeetCodeTableVC.m */; };
 		9A42A9F523D7023B00E35967 /* LeetCodeTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A42A9F323D7023B00E35967 /* LeetCodeTableVC.xib */; };
+		9A8F6061241E2F83009A26BE /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6060241E2F83009A26BE /* OSUnfairLockDemo.m */; };
+		9A8F6064241E30C0009A26BE /* MutexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6063241E30C0009A26BE /* MutexDemo.m */; };
+		9A8F6067241E3BB9009A26BE /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6066241E3BB9009A26BE /* NSLockDemo.m */; };
+		9A8F606A241E66F1009A26BE /* SemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6069241E66F1009A26BE /* SemaphoreDemo.m */; };
+		9A8F606E241E71D2009A26BE /* ARCAndMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F606D241E71D2009A26BE /* ARCAndMRCViewController.m */; };
+		9A8F6071241E769C009A26BE /* ZFProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6070241E769C009A26BE /* ZFProxy.m */; };
+		9A8F6074241E7852009A26BE /* SystemProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6073241E7852009A26BE /* SystemProxy.m */; };
 		9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46BB23C9998C00224A8A /* MyOperation.m */; };
 		9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */; };
 		9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C623CC0E1700224A8A /* TransformView.xib */; };
@@ -174,6 +181,20 @@
 		9A42A9F123D7023B00E35967 /* LeetCodeTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCodeTableVC.h; sourceTree = "<group>"; };
 		9A42A9F223D7023B00E35967 /* LeetCodeTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeetCodeTableVC.m; sourceTree = "<group>"; };
 		9A42A9F323D7023B00E35967 /* LeetCodeTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeetCodeTableVC.xib; sourceTree = "<group>"; };
+		9A8F605F241E2F83009A26BE /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		9A8F6060241E2F83009A26BE /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		9A8F6062241E30C0009A26BE /* MutexDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexDemo.h; sourceTree = "<group>"; };
+		9A8F6063241E30C0009A26BE /* MutexDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexDemo.m; sourceTree = "<group>"; };
+		9A8F6065241E3BB9009A26BE /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
+		9A8F6066241E3BB9009A26BE /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		9A8F6068241E66F1009A26BE /* SemaphoreDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreDemo.h; sourceTree = "<group>"; };
+		9A8F6069241E66F1009A26BE /* SemaphoreDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemo.m; sourceTree = "<group>"; };
+		9A8F606C241E71D2009A26BE /* ARCAndMRCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCAndMRCViewController.h; sourceTree = "<group>"; };
+		9A8F606D241E71D2009A26BE /* ARCAndMRCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCAndMRCViewController.m; sourceTree = "<group>"; };
+		9A8F606F241E769C009A26BE /* ZFProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFProxy.h; sourceTree = "<group>"; };
+		9A8F6070241E769C009A26BE /* ZFProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFProxy.m; sourceTree = "<group>"; };
+		9A8F6072241E7852009A26BE /* SystemProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemProxy.h; sourceTree = "<group>"; };
+		9A8F6073241E7852009A26BE /* SystemProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemProxy.m; sourceTree = "<group>"; };
 		9AAB46BA23C9998B00224A8A /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
 		9AAB46BB23C9998C00224A8A /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 		9AAB46BF23CC08F800224A8A /* TransAndGestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransAndGestTableVC.h; sourceTree = "<group>"; };
@@ -282,6 +303,14 @@
 				7D85B0D0241D25E50033037A /* GCDBaseLock.m */,
 				7D85B0D2241D299A0033037A /* OSSpinLockDemo.h */,
 				7D85B0D3241D299A0033037A /* OSSpinLockDemo.m */,
+				9A8F605F241E2F83009A26BE /* OSUnfairLockDemo.h */,
+				9A8F6060241E2F83009A26BE /* OSUnfairLockDemo.m */,
+				9A8F6062241E30C0009A26BE /* MutexDemo.h */,
+				9A8F6063241E30C0009A26BE /* MutexDemo.m */,
+				9A8F6065241E3BB9009A26BE /* NSLockDemo.h */,
+				9A8F6066241E3BB9009A26BE /* NSLockDemo.m */,
+				9A8F6068241E66F1009A26BE /* SemaphoreDemo.h */,
+				9A8F6069241E66F1009A26BE /* SemaphoreDemo.m */,
 			);
 			path = "18_底层之GCD";
 			sourceTree = "<group>";
@@ -379,6 +408,7 @@
 				7DB2A06B24190F0D00AF7913 /* 16_底层之Runtime */,
 				9A11145A241C7C180048F6DC /* 17_底层之Runloop */,
 				7D85B0C8241D13440033037A /* 18_底层之GCD */,
+				9A8F606B241E7190009A26BE /* 19_底层之内存管理 */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -451,6 +481,19 @@
 				9A42A9F323D7023B00E35967 /* LeetCodeTableVC.xib */,
 			);
 			path = "11_算法题";
+			sourceTree = "<group>";
+		};
+		9A8F606B241E7190009A26BE /* 19_底层之内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F606C241E71D2009A26BE /* ARCAndMRCViewController.h */,
+				9A8F606D241E71D2009A26BE /* ARCAndMRCViewController.m */,
+				9A8F606F241E769C009A26BE /* ZFProxy.h */,
+				9A8F6070241E769C009A26BE /* ZFProxy.m */,
+				9A8F6072241E7852009A26BE /* SystemProxy.h */,
+				9A8F6073241E7852009A26BE /* SystemProxy.m */,
+			);
+			path = "19_底层之内存管理";
 			sourceTree = "<group>";
 		};
 		9AAB46BD23C9D5B700224A8A /* 01_GCD相关 */ = {
@@ -614,12 +657,16 @@
 				9A42A9EE23D6D99B00E35967 /* RunLoopVC.m in Sources */,
 				7D2F400724154EC300AB9E07 /* ObjectiveViewController.m in Sources */,
 				7D2F400624154E9800AB9E07 /* TransformView.m in Sources */,
+				9A8F6067241E3BB9009A26BE /* NSLockDemo.m in Sources */,
+				9A8F606A241E66F1009A26BE /* SemaphoreDemo.m in Sources */,
 				7D2F400524154E6500AB9E07 /* TransAndGestTableVC.m in Sources */,
 				7D2F400124153C8500AB9E07 /* KVCAndKVOVC.m in Sources */,
 				7D85B0D4241D299A0033037A /* OSSpinLockDemo.m in Sources */,
 				7D2F400E2415F61F00AB9E07 /* PersonCategory.m in Sources */,
+				9A8F6071241E769C009A26BE /* ZFProxy.m in Sources */,
 				9AAB46D723CC66D800224A8A /* ShadowView.m in Sources */,
 				9A42A9BE23D4254400E35967 /* CustomButton.m in Sources */,
+				9A8F6074241E7852009A26BE /* SystemProxy.m in Sources */,
 				9A32B22423C6F49A00F6CEAA /* ViewController.m in Sources */,
 				9A32B21E23C6F49A00F6CEAA /* AppDelegate.m in Sources */,
 				9AAB46D323CC654500224A8A /* HitTestVC.m in Sources */,
@@ -633,11 +680,14 @@
 				7D2F402124164B2000AB9E07 /* BlockViewController.m in Sources */,
 				7D85B0CB241D13640033037A /* GCDVC.m in Sources */,
 				7D2F40172415F7F900AB9E07 /* StudentCategory.m in Sources */,
+				9A8F6064241E30C0009A26BE /* MutexDemo.m in Sources */,
 				9AAB46CE23CC39FB00224A8A /* GestureVC.m in Sources */,
 				9AAB46E423CD961200224A8A /* QuartzTableVC.m in Sources */,
+				9A8F606E241E71D2009A26BE /* ARCAndMRCViewController.m in Sources */,
 				9A42A9C623D44F8A00E35967 /* Person+Student.m in Sources */,
 				9A42A9F423D7023B00E35967 /* LeetCodeTableVC.m in Sources */,
 				7D85B0D1241D25E50033037A /* GCDBaseLock.m in Sources */,
+				9A8F6061241E2F83009A26BE /* OSUnfairLockDemo.m in Sources */,
 				9A11145D241C7C4D0048F6DC /* RunloopViewController.m in Sources */,
 				9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */,
 				7D2F401A2415F80800AB9E07 /* StudentCategory+Test1.m in Sources */,

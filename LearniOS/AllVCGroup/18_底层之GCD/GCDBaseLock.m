@@ -15,8 +15,6 @@
 
 @implementation GCDBaseLock
 
-- (void)otherTest {}
-
 /**
  存钱、取钱演示
  */

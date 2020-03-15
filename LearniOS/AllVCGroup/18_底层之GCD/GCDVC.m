@@ -9,6 +9,9 @@
 #import "GCDVC.h"
 #import "GCDBaseLock.h"
 #import "OSSpinLockDemo.h"
+#import "OSUnfairLockDemo.h"
+#import "MutexDemo.h"
+#import "NSLockDemo.h"
 
 @interface GCDVC ()
 
@@ -30,9 +33,7 @@
     
 //    [self interview3];
     
-    OSSpinLockDemo *spinLock = [[OSSpinLockDemo alloc] init];
-    [spinLock ticketTest];
-    [spinLock moneyTest];
+    [self aboutLock];
 }
 
 // 死锁1
@@ -101,8 +102,55 @@
 - (void)aboutLock {
     /*
      1、OSSpinLock：自旋锁，等待锁的线程会处于忙等（busy-wait）状态，一直占用CPU资源
+        已经废弃，不建议使用，会出现优先级反转问题。需要导入 <libkern/OSAtomic.h>
      
+     2、os_unfair_lock：互斥锁，用于取代不安全的OSSpinLock，从iOS10开始支持。从底层调用看，
+        等待os_unfair_lock锁的线程会处于休眠状态，并非忙等。需要导入 <os/lock.h>
+     
+     3、pthread_mutex: 互斥锁，等待锁的线程会处于休眠状态。需要导入<pthread.h>
+        pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_DEFAULT); 为互斥锁
+     4、递归锁：允许同一个线程对一把锁重复加锁
+        pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE); 为递归锁
+     
+     5、NSLock是对mutex普通锁（PTHREAD_MUTEX_DEFAULT）的封装
+     
+     6、NSRecursiveLock是对mutex递归锁（PTHREAD_MUTEX_RECURSIVE）的封装，API和NSLock基本一致
+     
+     7、NSCondition是对mutex和cond的封装。NSConditionLock是对NSCondition的进一步封装，可以设置具体的条件值
+     
+     8、利用GCD的串行队列，也可以实现线程同步
+     
+     9、利用dispatch_semaphore实现线程安全。其初始值用来控制线程访问并发的最大数量
+     
+     10、@synchronized是对mutex递归锁（PTHREAD_MUTEX_RECURSIVE）的封装
+     
+     锁的性能比较：
+     os_unfair_lock >
+     OSSpinLock >
+     dispatch_semaphore >
+     pthread_mutex(default 互斥锁) >
+     dispatch_queue(serial) >
+     NSLock >
+     NSCondition >
+     pthred_mutex(recursive递归锁) >
+     NSRecursiveLock >
+     NSConditionLock >
+     @synchronized
+     
+     11、atomic用于保证属性setter、getter的原子性操作，相当于在getter/setter内部加了线程同步的锁（spinLock自旋锁）
+     
+     12、pthread_rwwlock 读写锁
+        dispatch_barrier_async 栅栏函数
+        可以解决读写操作问题：
+        . 同一时间只允许一条线程执行写的操作
+        . 允许多条线程执行读的操作
+        . 不允许读/写操作同时进行
      */
+    
+    // 各种锁处理线程安全问题
+    MutexDemo *lock = [[MutexDemo alloc] init];
+    [lock ticketTest];
+    [lock moneyTest];
 }
 
 @end

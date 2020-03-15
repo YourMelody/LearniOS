@@ -27,6 +27,7 @@
 #import "RuntimeViewController.h"
 #import "RunloopViewController.h"
 #import "GCDVC.h"
+#import "ARCAndMRCViewController.h"
 
 @interface ViewController ()
 
@@ -56,7 +57,8 @@
         @"15、底层之block",
         @"16、底层之Runtime",
         @"17、底层之Runloop",
-        @"18、底层之GCD"
+        @"18、底层之GCD",
+        @"19、底层之内存管理"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -144,6 +146,10 @@
     } else if (indexPath.row == 17) {
         // 18、底层之GCD
         GCDVC *vc = [[GCDVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 18) {
+        // 19、底层之内存管理
+        ARCAndMRCViewController *vc = [[ARCAndMRCViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

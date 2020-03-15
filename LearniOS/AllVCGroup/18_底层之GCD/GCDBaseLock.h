@@ -12,7 +12,6 @@
 
 - (void)moneyTest;
 - (void)ticketTest;
-- (void)otherTest;
 
 #pragma mark - 暴露给子类去使用
 // 存钱
