@@ -84,7 +84,7 @@
      	1.1 首先按照getKey、key、isKey、_key顺序查找方法，找到了，直接调用；没有找到，执行下一步
      	1.2 查看accessInstanceVariablesDirectly的返回值，默认返回YES。如果返回NO，则
      		报错：valueforUndefinedKey:抛出异常；返回YES则执行下一步
-     	1.3 按照_key、_isKey、key、isKey顺序查找成员变量。找到则直接赋值；没有找到，则抛出1.2中的异常
+     	1.3 按照_key、_isKey、key、isKey顺序查找成员变量。找到则直接返回成员变量的值；没有找到，则抛出1.2中的异常
      3、通过KVC修改属性值，可以触发KVO，不管是否有set方法，都会触发。因为KVC内部会自动调用
      	willChangeValueForKey:和didChangeValueForKey:
      */

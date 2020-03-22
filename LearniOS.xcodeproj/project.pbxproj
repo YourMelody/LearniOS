@@ -69,6 +69,7 @@
 		9A8F606E241E71D2009A26BE /* ARCAndMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F606D241E71D2009A26BE /* ARCAndMRCViewController.m */; };
 		9A8F6071241E769C009A26BE /* ZFProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6070241E769C009A26BE /* ZFProxy.m */; };
 		9A8F6074241E7852009A26BE /* SystemProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F6073241E7852009A26BE /* SystemProxy.m */; };
+		9A9EA9212420EC5800C631DD /* XNYouHuaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9EA9202420EC5800C631DD /* XNYouHuaVC.m */; };
 		9AAB46BC23C9998C00224A8A /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46BB23C9998C00224A8A /* MyOperation.m */; };
 		9AAB46C323CC08F800224A8A /* TransAndGestTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C123CC08F800224A8A /* TransAndGestTableVC.xib */; };
 		9AAB46C823CC0E1700224A8A /* TransformView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AAB46C623CC0E1700224A8A /* TransformView.xib */; };
@@ -195,6 +196,8 @@
 		9A8F6070241E769C009A26BE /* ZFProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFProxy.m; sourceTree = "<group>"; };
 		9A8F6072241E7852009A26BE /* SystemProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemProxy.h; sourceTree = "<group>"; };
 		9A8F6073241E7852009A26BE /* SystemProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemProxy.m; sourceTree = "<group>"; };
+		9A9EA91F2420EC5800C631DD /* XNYouHuaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNYouHuaVC.h; sourceTree = "<group>"; };
+		9A9EA9202420EC5800C631DD /* XNYouHuaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNYouHuaVC.m; sourceTree = "<group>"; };
 		9AAB46BA23C9998B00224A8A /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
 		9AAB46BB23C9998C00224A8A /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 		9AAB46BF23CC08F800224A8A /* TransAndGestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransAndGestTableVC.h; sourceTree = "<group>"; };
@@ -409,6 +412,7 @@
 				9A11145A241C7C180048F6DC /* 17_底层之Runloop */,
 				7D85B0C8241D13440033037A /* 18_底层之GCD */,
 				9A8F606B241E7190009A26BE /* 19_底层之内存管理 */,
+				9A9EA91E2420E85200C631DD /* 20_底层之性能优化 */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
@@ -494,6 +498,15 @@
 				9A8F6073241E7852009A26BE /* SystemProxy.m */,
 			);
 			path = "19_底层之内存管理";
+			sourceTree = "<group>";
+		};
+		9A9EA91E2420E85200C631DD /* 20_底层之性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				9A9EA91F2420EC5800C631DD /* XNYouHuaVC.h */,
+				9A9EA9202420EC5800C631DD /* XNYouHuaVC.m */,
+			);
+			path = "20_底层之性能优化";
 			sourceTree = "<group>";
 		};
 		9AAB46BD23C9D5B700224A8A /* 01_GCD相关 */ = {
@@ -696,6 +709,7 @@
 				7D2F401D2415F80F00AB9E07 /* StudentCategory+Test2.m in Sources */,
 				7D2F3FFD24152C3C00AB9E07 /* NSObject+Test.m in Sources */,
 				7D2F400424153E7E00AB9E07 /* PersonKVO.m in Sources */,
+				9A9EA9212420EC5800C631DD /* XNYouHuaVC.m in Sources */,
 				7DB2A0792419213100AF7913 /* RuntimeMan.m in Sources */,
 				9A42A9CE23D53A1700E35967 /* PersonObsever.m in Sources */,
 				7DB2A07624191DF400AF7913 /* RuntimeStudent.m in Sources */,

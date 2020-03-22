@@ -131,7 +131,7 @@
      			. class_addMethod(self , sel, IMP, types);
      		+ (BOOL)resolveClassMethod:(SEL)sel;
                 . class_addMethod(object_getClass(self), sel, IMP, types);
-     		之后会再次重新走消息发送流 程
+     		之后会再次重新走消息发送流程
      	. 消息转发
      		. forwardingTargetForSelector:(SEL)aSelector 返回能够处理aSelector的对象
      		. methodSignaturForSelector:(SEL)aSelector 返回NSMethodSignature方法签名
@@ -140,8 +140,7 @@
      			anInvocation封装了一个方法调用：方法调用者、方法名、方法参数
      			anInvocation.target  anInvocation.selector  [anInvocation getArgument: atIndex]
      
-     2、dynamic是告诉编译器不用自动生成getter/setter的实现，不自动生成成员变量，
-     	等到运行时再添加方法实现
+     2、dynamic是告诉编译器不用自动生成getter/setter的实现，不自动生成成员变量，等到运行时再添加方法实现
      */
 }
 

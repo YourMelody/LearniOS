@@ -28,6 +28,7 @@
 #import "RunloopViewController.h"
 #import "GCDVC.h"
 #import "ARCAndMRCViewController.h"
+#import "XNYouHuaVC.h"
 
 @interface ViewController ()
 
@@ -58,7 +59,8 @@
         @"16、底层之Runtime",
         @"17、底层之Runloop",
         @"18、底层之GCD",
-        @"19、底层之内存管理"
+        @"19、底层之内存管理",
+        @"20、底层之性能优化"
     ];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -150,6 +152,10 @@
     } else if (indexPath.row == 18) {
         // 19、底层之内存管理
         ARCAndMRCViewController *vc = [[ARCAndMRCViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 19) {
+        // 19、底层之性能优化
+        XNYouHuaVC *vc = [[XNYouHuaVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

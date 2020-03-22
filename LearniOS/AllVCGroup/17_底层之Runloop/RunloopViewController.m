@@ -68,7 +68,7 @@
      
     4、CFRunLoopModeRef代表RunLoop的运行模式。一个RunLoop包含若干mode，每个mode又包含若干source0/source1/timer/observer;
         RunLoop启动时只能选择其中一个mode作为currentMode；如果需要切换mode，只能退出当前Loop，再重新选择一个mode进入（好处：不同
-        组的source0/source1/timer/observer能分隔开来，互补影响）；如果mode中没有任何source0/source1/timer/observer，
+        组的source0/source1/timer/observer能分隔开来，互不影响）；如果mode中没有任何source0/source1/timer/observer，
         RunLoop会立马退出。
         常见的两种Mode：
         . kCFRunLoopDefaultMode(NSDefaultRunLoopmode): App默认在该模式下运行
@@ -98,7 +98,7 @@
             kCFRunLoopBeforeSources = (1UL << 2),   // 即将处理Source
             kCFRunLoopBeforeWaiting = (1UL << 5),   // 即将进入休眠
             kCFRunLoopAfterWaiting = (1UL << 6),    // 刚从休眠中唤醒
-            kCFRunLoopExit = (1UL << 7),            // 即将推出Loop
+            kCFRunLoopExit = (1UL << 7),            // 即将退出Loop
             kCFRunLoopAllActivities = 0x0FFFFFFFU
         }
      
