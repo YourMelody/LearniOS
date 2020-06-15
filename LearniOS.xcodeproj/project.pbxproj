@@ -86,6 +86,7 @@
 		9AAB46ED23CDA06400224A8A /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46EC23CDA06400224A8A /* DrawView.m */; };
 		9AAB46F323D0558D00224A8A /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB46F223D0558D00224A8A /* ClockView.m */; };
 		9ACCC64023D3F39D0016EF17 /* ViewReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCC63F23D3F39D0016EF17 /* ViewReusePool.m */; };
+		B9548E7C2492127B00C10740 /* CoreAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9548E7B2492127B00C10740 /* CoreAnimationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -231,6 +232,8 @@
 		9ACCC63F23D3F39D0016EF17 /* ViewReusePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewReusePool.m; sourceTree = "<group>"; };
 		9ACCC64B23D3F95B0016EF17 /* IndexedTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexedTableView.h; sourceTree = "<group>"; };
 		9ACCC64C23D3F95B0016EF17 /* IndexedTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexedTableView.m; sourceTree = "<group>"; };
+		B9548E7A2492127B00C10740 /* CoreAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationVC.h; sourceTree = "<group>"; };
+		B9548E7B2492127B00C10740 /* CoreAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,12 +400,12 @@
 				9A1F493623C880D600FA6CC8 /* 02_NSOperation相关 */,
 				9AAB46BE23CC06AB00224A8A /* 03_Transorm和手势等 */,
 				9AAB46E023CD949700224A8A /* 04_Quartz2D */,
-				9ACCC63823D3F1FF0016EF17 /* 05_面试之UI视图相关 */,
-				9A42A9C023D43BCA00E35967 /* 06_面试之OC语言相关 */,
-				9A42A9CF23D54B1600E35967 /* 07_面试之Runtime相关 */,
-				9A42A9D823D58A3A00E35967 /* 08_面试之内存管理 */,
-				9A42A9E423D6A7FD00E35967 /* 09_面试之Block相关 */,
-				9A42A9EA23D6D98100E35967 /* 10_面试之RunLoop相关 */,
+				9ACCC63823D3F1FF0016EF17 /* 05_UI视图相关 */,
+				9A42A9C023D43BCA00E35967 /* 06_OC语言相关 */,
+				9A42A9CF23D54B1600E35967 /* 07_Runtime相关 */,
+				9A42A9D823D58A3A00E35967 /* 08_内存管理 */,
+				9A42A9E423D6A7FD00E35967 /* 09_Block相关 */,
+				9A42A9EA23D6D98100E35967 /* 10_RunLoop相关 */,
 				9A42A9F023D700AF00E35967 /* 11_算法题 */,
 				7D2F3FF22415052200AB9E07 /* 12_底层之OC对象 */,
 				7D2F3FFE24153C5700AB9E07 /* 13_底层之KVC和KVO */,
@@ -413,11 +416,12 @@
 				7D85B0C8241D13440033037A /* 18_底层之GCD */,
 				9A8F606B241E7190009A26BE /* 19_底层之内存管理 */,
 				9A9EA91E2420E85200C631DD /* 20_底层之性能优化 */,
+				B9548E792492123800C10740 /* 21_CoreAnimation */,
 			);
 			path = AllVCGroup;
 			sourceTree = "<group>";
 		};
-		9A42A9C023D43BCA00E35967 /* 06_面试之OC语言相关 */ = {
+		9A42A9C023D43BCA00E35967 /* 06_OC语言相关 */ = {
 			isa = PBXGroup;
 			children = (
 				9A42A9C123D44F7900E35967 /* Person.h */,
@@ -430,10 +434,10 @@
 				9A42A9C823D4581000E35967 /* CategoryVC.m */,
 				9A42A9C923D4581000E35967 /* CategoryVC.xib */,
 			);
-			path = "06_面试之OC语言相关";
+			path = "06_OC语言相关";
 			sourceTree = "<group>";
 		};
-		9A42A9CF23D54B1600E35967 /* 07_面试之Runtime相关 */ = {
+		9A42A9CF23D54B1600E35967 /* 07_Runtime相关 */ = {
 			isa = PBXGroup;
 			children = (
 				9A42A9D023D54B4600E35967 /* RuntimeVC.h */,
@@ -442,10 +446,10 @@
 				9A42A9D523D57D9200E35967 /* RuntimeObj.h */,
 				9A42A9D623D57D9200E35967 /* RuntimeObj.m */,
 			);
-			path = "07_面试之Runtime相关";
+			path = "07_Runtime相关";
 			sourceTree = "<group>";
 		};
-		9A42A9D823D58A3A00E35967 /* 08_面试之内存管理 */ = {
+		9A42A9D823D58A3A00E35967 /* 08_内存管理 */ = {
 			isa = PBXGroup;
 			children = (
 				9A42A9D923D58C2500E35967 /* RAMManagerVC.h */,
@@ -454,27 +458,27 @@
 				9A42A9E123D5B1C100E35967 /* NSTimer+WeakTimer.h */,
 				9A42A9E223D5B1C100E35967 /* NSTimer+WeakTimer.m */,
 			);
-			path = "08_面试之内存管理";
+			path = "08_内存管理";
 			sourceTree = "<group>";
 		};
-		9A42A9E423D6A7FD00E35967 /* 09_面试之Block相关 */ = {
+		9A42A9E423D6A7FD00E35967 /* 09_Block相关 */ = {
 			isa = PBXGroup;
 			children = (
 				9A42A9E523D6A82100E35967 /* BlockVC.h */,
 				9A42A9E623D6A82100E35967 /* BlockVC.m */,
 				9A42A9E723D6A82100E35967 /* BlockVC.xib */,
 			);
-			path = "09_面试之Block相关";
+			path = "09_Block相关";
 			sourceTree = "<group>";
 		};
-		9A42A9EA23D6D98100E35967 /* 10_面试之RunLoop相关 */ = {
+		9A42A9EA23D6D98100E35967 /* 10_RunLoop相关 */ = {
 			isa = PBXGroup;
 			children = (
 				9A42A9EB23D6D99B00E35967 /* RunLoopVC.h */,
 				9A42A9EC23D6D99B00E35967 /* RunLoopVC.m */,
 				9A42A9ED23D6D99B00E35967 /* RunLoopVC.xib */,
 			);
-			path = "10_面试之RunLoop相关";
+			path = "10_RunLoop相关";
 			sourceTree = "<group>";
 		};
 		9A42A9F023D700AF00E35967 /* 11_算法题 */ = {
@@ -560,7 +564,7 @@
 			path = 04_Quartz2D;
 			sourceTree = "<group>";
 		};
-		9ACCC63823D3F1FF0016EF17 /* 05_面试之UI视图相关 */ = {
+		9ACCC63823D3F1FF0016EF17 /* 05_UI视图相关 */ = {
 			isa = PBXGroup;
 			children = (
 				9ACCC63E23D3F39D0016EF17 /* ViewReusePool.h */,
@@ -573,7 +577,16 @@
 				9A42A9B823D3FD9800E35967 /* IndexTableVC.m */,
 				9A42A9B923D3FD9800E35967 /* IndexTableVC.xib */,
 			);
-			path = "05_面试之UI视图相关";
+			path = "05_UI视图相关";
+			sourceTree = "<group>";
+		};
+		B9548E792492123800C10740 /* 21_CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B9548E7A2492127B00C10740 /* CoreAnimationVC.h */,
+				B9548E7B2492127B00C10740 /* CoreAnimationVC.m */,
+			);
+			path = 21_CoreAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -714,6 +727,7 @@
 				9A42A9CE23D53A1700E35967 /* PersonObsever.m in Sources */,
 				7DB2A07624191DF400AF7913 /* RuntimeStudent.m in Sources */,
 				7D2F400B2415E91000AB9E07 /* CategoryViewController.m in Sources */,
+				B9548E7C2492127B00C10740 /* CoreAnimationVC.m in Sources */,
 				9AAB46F323D0558D00224A8A /* ClockView.m in Sources */,
 				9A42A9E323D5B1C100E35967 /* NSTimer+WeakTimer.m in Sources */,
 				7DB2A06E24190F4000AF7913 /* RuntimeViewController.m in Sources */,
