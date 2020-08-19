@@ -42,6 +42,33 @@
 @implementation Man
 @end
 
+
+/********************************   TestObj1   ******************************************/
+@interface TestObj1 : NSObject
+
+@property(nonatomic, assign) int age;
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *address;
+@property(nonatomic, assign) int height;
+
+@end
+
+@implementation TestObj1
+@end
+
+/********************************   TestObj2   ******************************************/
+@interface TestObj2 : NSObject
+
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *address;
+@property(nonatomic, assign) int age;
+@property(nonatomic, assign) int height;
+
+@end
+
+@implementation TestObj2
+@end
+
 /********************************   ObjectiveViewController   ******************************************/
 @interface ObjectiveViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -58,7 +85,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataSource = @[
                         @"1、NSObject对象占用内存大小",
-                        @"2、对象、类对象、元类对象"
+                        @"2、对象、类对象、元类对象",
+                        @"3、测试"
                         ];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -89,6 +117,8 @@
         [self objcSizeFunc];
     } else if (indexPath.row == 1) {
         [self instanceAndClassAndMetaClass];
+    } else if (indexPath.row == 2) {
+        [self testFunction];
     }
 }
 
@@ -168,6 +198,24 @@
     
     // 由于NSObject的元类对象的superclass->NSObject的类对象，所以能够成功调用NSObject中的-test对象方法。
     [PersonObj test];
+}
+
+- (void)testFunction {
+    TestObj1 *obj1 = [[TestObj1 alloc] init];
+    obj1.name = @"name1";
+    obj1.address = @"address1";
+    obj1.age = 18;
+    obj1.height = 180;
+    NSLog(@"obj1实例对象的成员变量占用内存空: %zd", class_getInstanceSize(obj1.class)); // 32
+    NSLog(@"obj1指针所指向内存的大小：%zd", malloc_size((__bridge const void *)obj1)); // 32
+    
+    TestObj2 *obj2 = [[TestObj2 alloc] init];
+    obj2.name = @"name2";
+    obj2.address = @"address2";
+    obj2.age = 120;
+    obj2.height = 190;
+    NSLog(@"obj2实例对象的成员变量占用内存空: %zd", class_getInstanceSize(obj2.class)); // 32
+    NSLog(@"obj2指针所指向内存的大小：%zd", malloc_size((__bridge const void *)obj2)); // 32
 }
 
 @end
